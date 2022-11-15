@@ -1,0 +1,27 @@
+{
+  "name": "terms-document-types",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/OpenTermsArchive/terms-document-types#readme",
+  "bugs": {
+    "url": "https://github.com/OpenTermsArchive/terms-document-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenTermsArchive/terms-document-types.git"
+  },
+  "license": "EUPL-1.2",
+  "author": "OpenTermsArchive",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/validate.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.11.2",
+    "ajv-formats": "^2.1.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-json-format": "^2.0.1"
+  }
+}
