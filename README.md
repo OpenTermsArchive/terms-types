@@ -1,4 +1,4 @@
-# terms-document-types
+# terms-types
 
 This repository contains a database of document types related to terms (agreement, policy, guidelines, …) that can be associated with a service.
 
@@ -7,7 +7,7 @@ It aims to unify the different names that services may give to similar documents
 ## Installation
 
 ```bash
-npm install terms-document-types
+npm install @opentermsarchive/terms-types
 ```
 
 ## Usage
