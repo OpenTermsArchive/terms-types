@@ -13,7 +13,7 @@ npm install @opentermsarchive/terms-types
 ## Usage
 
 ```js
-import TERMS_DOCUMENT_TYPES from './index.js';
+import TERMS_DOCUMENT_TYPES from '@opentermsarchive/terms-types';
 
 console.log(TERMS_DOCUMENT_TYPES['Terms of Service']); // Display `Terms of Service` details
 
