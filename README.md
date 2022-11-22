@@ -1,8 +1,8 @@
-# terms-types
+# Terms Types
 
-This repository contains a database of document types related to terms (agreement, policy, guidelines, …) that can be associated with a service.
+This repository contains a database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered.
 
-It aims to unify the different names that services may give to similar documents to enable cross-services comparison.
+It aims at unifying the many names that services give to similar documents to enable comparison of terms across services no matter how they are named by their provider.
 
 ## Installation
 
@@ -13,26 +13,28 @@ npm install @opentermsarchive/terms-types
 ## Usage
 
 ```js
-import TERMS_DOCUMENT_TYPES from '@opentermsarchive/terms-types';
+import TERMS_TYPES from '@opentermsarchive/terms-types';
 
-console.log(TERMS_DOCUMENT_TYPES['Terms of Service']); // Display `Terms of Service` details
+console.log(TERMS_TYPES['Terms of Service']); // Display `Terms of Service` details
 
-console.log(Object.keys(TERMS_DOCUMENT_TYPES)); // Display all terms types
+console.log(Object.keys(TERMS_TYPES)); // Display all terms types
 ```
 
 ## Data Structure
 
 The `documentTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) document types. 
 
-The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The document type does not have to match the exact name, it only has to match the commitment that is taken.
+The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the commitment that is taken.
 
-So, in order to guide usage and disambiguate synonyms, each document type is characterised along three dimensions of the `commitment` that is being taken in it:
+### Tryptich
+
+In order to guide usage and disambiguate synonyms, each terms type is characterised by a tryptich along the three dimensions of the `commitment` that is being taken in it:
 
 - the `writer` of the document;
 - the targeted `audience`;
 - the `object` of the commitment.
 
-Each document type has the following required structure:
+Each type thus has the following structure, where all fields are required:
 
 ```json
 {
@@ -42,37 +44,40 @@ Each document type has the following required structure:
       "audience": "the targeted `audience",
       "object": "the `object` of the commitment"
     }
-  },
+  }
 }
 ````
 
-It may also contain an optional `references` property which contains a map of related resources that may help to understand the purpose of this document type or the discussions that led to the choice of this name. Each reference must have a name and a URL.
+### References
+
+It may also contain an optional `references` property which contains a map of related resources that may help to understand the purpose of this type, such as the discussions that led to the choice of this name. Each reference must have a name and a URL.
 
 ```json
 {
   "<Document Type>": {
-    "commitment": {},
+    "commitment": { … },
     "references": {
-      "<reference name>": "the URL where the reference can be found"
+      "<reference name>": "<URL where the reference can be found>"
     }
   },
 }
 ````
 
-As example, a document type thus looks like:
+### Example
 
 ```json
 {
-  "Business Privacy Policy": {
+  "Business Mediation Policy": {
     "commitment": {
       "writer": "intermediation service provider",
-      "audience": "business user",
-      "object": "personal data of business users and of people acting on their behalf"
+      "audience": "business users",
+      "object": "eligibility and process of mediation after internal complaints handling failed"
     },
     "references": {
-      "Open Terms Archive discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/923"
+      "Open Terms Archive discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/933",
+      "P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
     }
-  }
+  },
 }
 ```
 
