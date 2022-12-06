@@ -74,3 +74,4 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPMJS_ACCESS_TOKEN }}
+          access: public
