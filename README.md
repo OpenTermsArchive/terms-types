@@ -22,7 +22,7 @@ console.log(Object.keys(TERMS_TYPES)); // Display all terms types
 
 ## Data Structure
 
-The `documentTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) document types. 
+The `termsTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) terms types. 
 
 The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the commitment that is taken.
 
@@ -38,7 +38,7 @@ Each type thus has the following structure, where all fields are required:
 
 ```json
 {
-  "<Document Type>": {
+  "<Terms Type>": {
     "commitment": {
       "writer": "the `writer` of the document",
       "audience": "the targeted `audience",
@@ -54,7 +54,7 @@ It may also contain an optional `references` property which contains a map of re
 
 ```json
 {
-  "<Document Type>": {
+  "<Terms Type>": {
     "commitment": { … },
     "references": {
       "<reference name>": "<URL where the reference can be found>"
