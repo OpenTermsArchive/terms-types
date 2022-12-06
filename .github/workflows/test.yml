@@ -4,7 +4,8 @@ on:
   push:
   pull_request:
     types: [ opened, reopened ]
-
+  workflow_call:
+  
 jobs:
   validate:
     runs-on: ubuntu-latest
