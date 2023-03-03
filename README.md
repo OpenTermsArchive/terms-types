@@ -74,7 +74,7 @@ It may also contain an optional `references` property which contains a map of re
       "object": "eligibility and process of mediation after internal complaints handling failed"
     },
     "references": {
-      "Open Terms Archive discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/933",
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
       "P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
     }
   },
