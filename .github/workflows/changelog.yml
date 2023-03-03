@@ -15,4 +15,4 @@ on:
 
 jobs:
   check_changelog:
-    uses: ambanum/OpenTermsArchive/.github/workflows/changelog.yml@main
+    uses: OpenTermsArchive/engine/.github/workflows/changelog.yml@main

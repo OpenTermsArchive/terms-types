@@ -335,7 +335,7 @@
       "object": "parameters determining ranking and the reasons for their relative importance"
     },
     "references": {
-      "Open Terms Archive Discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/902",
+      "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/902",
       "Article 5 of P2B Regulation 2019/1150": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150#d1e868-57-1",
       "Article 6a of Directive 2011/83/EU": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02011L0083-20220528#tocId12",
       "Point (m) of Article 2(1) of Directive 2005/29/EC": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0029-20220528#tocId5"
@@ -348,7 +348,7 @@
       "object": "eligibility criteria, limitations and benefits of a privileged seller status programme"
     },
     "references": {
-      "Open Terms Archive Discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/922"
+      "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/922"
     }
   },
   "Platform to Business Notice": {
@@ -358,7 +358,7 @@
       "object": "complaints handling, mediation, transparency and other rights and information mandated by the P2B regulation"
     },
     "references": {
-      "Open Terms Archive Discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/940",
+      "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/940",
       "P2B Regulation 2019/1150": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj"
     }
   },
@@ -369,7 +369,7 @@
       "object": "eligibility and process of mediation after internal complaints handling failed"
     },
     "references": {
-      "Open Terms Archive discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/933",
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
       "P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
     }
   },
@@ -380,7 +380,7 @@
       "object": "personal data of business users and of people acting on their behalf"
     },
     "references": {
-      "Open Terms Archive discussion": "https://github.com/ambanum/OpenTermsArchive/discussions/923"
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/923"
     }
   }
 }
