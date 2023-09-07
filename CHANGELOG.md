@@ -8,7 +8,7 @@ Unlike Common Changelog, the `unreleased` section of [Keep a Changelog](https://
 ## Unreleased [patch]
 
 ### Changed
-- Change URL to engine repo
+- Change URL to engine repository
 
 ## 0.1.1 - 2022-12-06
 ### Fixed
