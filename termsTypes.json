@@ -174,13 +174,6 @@
       "object": "end user’s live service usage"
     }
   },
-  "Ad Publishing Policy": {
-    "commitment": {
-      "writer": "service provider",
-      "audience": "end user",
-      "object": "acceptable and unacceptable usage"
-    }
-  },
   "Complaints Policy": {
     "commitment": {
       "writer": "service provider",
