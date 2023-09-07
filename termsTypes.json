@@ -27,20 +27,6 @@
       "object": "all tracking technologies, including cookies, session storage, fingerprints…"
     }
   },
-  "Parent Organization Terms": {
-    "commitment": {
-      "writer": "parent organization",
-      "audience": "end user",
-      "object": "products and services usage"
-    }
-  },
-  "Parent Organization Privacy Policy": {
-    "commitment": {
-      "writer": "parent organization",
-      "audience": "end user",
-      "object": "personal data"
-    }
-  },
   "Developer Terms": {
     "commitment": {
       "writer": "service provider",
