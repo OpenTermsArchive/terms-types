@@ -7,7 +7,7 @@ Unlike Common Changelog, the `unreleased` section of [Keep a Changelog](https://
 
 ## Unreleased [major]
 
-### Changed
+### Removed
 
 - **Breaking:** Remove obsolete `Community Guidelines` subtypes; update your declaration by [combining all source documents](https://docs.opentermsarchive.org/contributing-terms/#terms-with-multiple-source-documents) of the `Community Guidelines` terms ([#13](https://github.com/OpenTermsArchive/terms-types/discussions/13))
 - **Breaking:** Remove `Parent Organization Terms` and `Parent Organization Privacy Policy` types; for services that use only a parent organisation policy, update your declarations to track directly the parent document; for services that have both the simple terms type and their parent, update your declarations to track them as a [multiple source documents terms](https://docs.opentermsarchive.org/contributing-terms/#terms-with-multiple-source-documents) ([#22](https://github.com/OpenTermsArchive/terms-types/issues/22))
