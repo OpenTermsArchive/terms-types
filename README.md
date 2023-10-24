@@ -89,6 +89,16 @@ It may also contain an optional `references` property which contains a map of re
 }
 ```
 
+## How to define the tryptich
+
+To identify the tryptich of specific terms, answer the following questions:
+
+1. Who is responsible for creating and maintaining those terms? Most often, it will be the `service provider` itself. Sometimes, while still being the service provider, it could be that only providers from a certain industry could write such terms, such as `transportation operator`.
+2. Who is the target audience whose rights and duties are defined? Often, it will be the `end user`, but it can also be the `commercial partners` or `business users`, for example.
+3. Which information or interaction precisely is constrained by those terms? For example, the `end users’ personal data`, or maybe the `privileged seller status programme`. Try to be as specific as possible, as this precision enables distinguishing between otherwise similar types.
+
+After having answered these questions, if reading out loud the tryptich, it sounds right to say that **“these terms describe how the `<writer>` commits to handle the `<object>` for its `<audience>`”**.
+
 ## Add new terms type
 
 Contributions to expand the `terms-types` database are welcome. If you'd like to suggest a new type, please follow the [process detailed in our CONTRIBUTING file](CONTRIBUTING.md).
