@@ -22,7 +22,7 @@ console.log(Object.keys(TERMS_TYPES)); // Display all terms types
 
 ## Data Structure
 
-The `termsTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) terms types. 
+The `termsTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) terms types.
 
 The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the commitment that is taken.
 
@@ -80,6 +80,10 @@ It may also contain an optional `references` property which contains a map of re
   },
 }
 ```
+
+## Add new terms type
+
+Contributions to expand the `terms-types` collection are welcome. If you'd like to suggest a new type, please follow the [process detailed in our CONTRIBUTING file](CONTRIBUTING.md).
 
 ---
 
