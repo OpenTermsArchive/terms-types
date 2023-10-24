@@ -1,41 +1,68 @@
-# Contributing to Terms Types
+# Add new Terms Types
 
-Thank you for considering contributing to the `terms-types` project!  🎉👍
+Every terms tracked in Open Terms Archive must have a type. Each service can have only one terms of a given type.
 
-Suggestions for new types of terms of service are welcome. To ensure a smooth process, please follow the steps outlined below:
+If you need to track some terms for a service, you might encounter cases when no matching type seems to be available in the list of supported terms types.
 
-## Process for adding a new terms type
+## Process
 
-1. **Open a discussion**
-   - Start a new discussion with the type "New Type" in the [Discussions section](https://github.com/opentermsarchive/terms-types/discussions).
+### Define the tryptich
 
-2. **Clearly define the need**
-   - Explain why you believe a new terms type is needed.
-   - Explain how it differs from existing types.
-   - Provide examples or scenarios where this type is applicable.
+Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the tryptich](./README.md#how-to-define-the-tryptich) that describes unambiguously the type of these terms.
 
-3. **Suggest a name**
-   - Propose a unique and descriptive name for the new terms type. While it doesn't have to match the service-provided names, it should be clear, internationally understandable, and as descriptive as possible.
-   - Ensure that the name is not already used in the [database](./termsTypes.json).
+Once you have defined the tryptich for the terms you intend to track, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking 🙂
 
-4. **Suggest a tryptich**
-   - Provide a unique tryptich for the new terms type. The tryptich should characterize the commitment being taken in three dimensions:
-     - **The Writer of the Document:** Identify who is responsible for creating and maintaining the document.
-     - **The Targeted Audience:** Specify who the terms are intended for (e.g., users, customers, employees).
-     - **The Object of the Commitment:** Describe the main focus or purpose of the terms (e.g., privacy, usage, conduct).
-   - The tryptich helps in distinguishing this new type from others and ensures clarity in its purpose.
-   - Ensure that the tryptich is not already used in the [database](./termsTypes.json).
+### Open a discussion
 
-5. **Optional: Add references**
-   - Include any relevant references that may help in understanding the purpose of this type. This could include discussions, legal references, or other resources. References can provide valuable context and background information about the suggested terms type.
+If no existing type matches the terms you intend to track, check the open discussions in the category “New Type” in the [Discussions section](https://github.com/opentermsarchive/terms-types/discussions) of this repository.
 
-6. **Provide an example**
-   - Provide at least one example of the new terms type, with relevant information on its source and context:
-      - **URL of the terms:** Include a direct link to the terms document.
-      - **Service provider:** Specify the entity or organization that provides these terms.
-      - **Service-specific name:** Provide the title or name given to these terms by the service provider.
-   - As this suggestions will only be considered for inclusion when there are at least three examples, it is highly encouraged to provide them directly. This ensures that the new type has a sufficient representation to be meaningful in the database.
+If no discussion seems to match the type you are interested in adding, [start a new “New Type” discussion](https://github.com/OpenTermsArchive/terms-types/discussions/new?category=new-type) and call it “Add _your proposed terms type name_”.
 
-7. **Discussion and validation**
-   - The suggestion will be discussed by the community.
-   - The Open Terms Archive core team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. This step is essential for learning and maintaining consistency.
+### Define the type name
+
+Propose a unique and descriptive name for the new terms type.
+
+It should be the most commonly used and most internationally understandable for this type. It doesn't have to, and probably should not, match the service-provided name. Make use of tools such as Google Trends, Linguee and thesaurus to find the name that strikes the best balance between genericity, precision and multilingualism.
+
+> For example, the “Imprint” type is [called this way](https://github.com/OpenTermsArchive/engine/issues/801) as a balance between the French “mentions légales”, the German “impressum”, and other considerations.
+
+Ensure that this name (or any close one) is not already used in the [database](./termsTypes.json).
+
+Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
+
+### Provide examples
+
+Provide at least the terms you intend to track as example of the new terms type, with relevant information on its source and context:
+
+- Include a direct link to the source document.
+- Name the service provider and describe its service.
+- Provider-given terms name: provide the title or name given to these terms by the service provider.
+
+### Add references
+
+Include any relevant [references](./README.md#references) that may help in understanding the purpose of this type. This could include legal definitions, discussions, or any other resource that provides context or background information.
+
+### Build consensus
+
+Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the tryptich should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
+
+In order to ensure global relevance, your suggestion will only be considered for inclusion when there are at least three examples of such terms, each from different service providers. You are welcome to provide several examples on your own.
+
+### Integration
+
+Once:
+
+- at least three examples from different service providers have been given;
+- a consensus has been reached on the tryptich;
+- a consensus has been reached on the name;
+- at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
+
+Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database.
+
+## Governance considerations
+
+Considering the decentralised and distributed usage of Open Terms Archive, it is very impactful to remove types.
+
+The addition process is thus designed to add significant friction to the addition of new terms types, to ensure that only those that have demonstrated reusability and adoption are added to the database.
+
+The process itself, while progressively formalised, still provides ample arbitrary control to the Core Team, in order to avoid loopholes that could lead to mass additions. As the process is more regularly used, this power will be progressively reduced to make the community more autonomous.

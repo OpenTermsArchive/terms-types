@@ -58,7 +58,7 @@ Each type thus has the following structure, where all fields are required:
 
 ### References
 
-It may also contain an optional `references` property which contains a map of related resources that may help to understand the purpose of this type, such as the discussions that led to the choice of this name. Each reference must have a name and a URL.
+It may also contain an optional `references` property which contains a map of related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name. Each reference must have a name and a URL.
 
 ```json
 {
@@ -99,9 +99,9 @@ To identify the tryptich of specific terms, answer the following questions:
 
 After having answered these questions, if reading out loud the tryptich, it sounds right to say that **“these terms describe how the `<writer>` commits to handle the `<object>` for its `<audience>`”**.
 
-## Add new terms type
+## Add new terms types
 
-Contributions to expand the `terms-types` database are welcome. If you'd like to suggest a new type, please follow the [process detailed in our CONTRIBUTING file](CONTRIBUTING.md).
+Contributions to expand the list of known terms types are welcome, but need to follow a strict design, review and validation process in order to ensure consistency in the ontology. If you'd like to suggest a new type, please follow the process detailed in the [CONTRIBUTING file](CONTRIBUTING.md).
 
 ---
 
