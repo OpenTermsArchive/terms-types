@@ -79,7 +79,7 @@ It may also contain an optional `references` property which contains a map of re
     "commitment": {
       "writer": "intermediation service provider",
       "audience": "business users",
-      "object": "eligibility and process of mediation after internal complaints handling failed"
+      "object": "mediation process after internal complaints handling failed"
     },
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
