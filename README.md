@@ -28,6 +28,12 @@ The `termsTypes.json` JSON file is a map of [title cased](https://en.wikipedia.o
 
 The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the commitment that is taken.
 
+### Name
+
+The name of each type is written with title capitalisation (every noun is capitalised).
+
+It should be the most commonly used and most internationally understandable for this type.
+
 ### Tryptich
 
 In order to guide usage and disambiguate synonyms, each terms type is characterised by a tryptich along the three dimensions of the `commitment` that is being taken in it:
@@ -40,7 +46,7 @@ Each type thus has the following structure, where all fields are required:
 
 ```json
 {
-  "<Terms Type>": {
+  "<Terms Type Name>": {
     "commitment": {
       "writer": "the `writer` of the document",
       "audience": "the targeted `audience",
@@ -56,7 +62,7 @@ It may also contain an optional `references` property which contains a map of re
 
 ```json
 {
-  "<Terms Type>": {
+  "<Terms Type Name>": {
     "commitment": { … },
     "references": {
       "<reference name>": "<URL where the reference can be found>"
