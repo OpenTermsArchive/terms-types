@@ -48,7 +48,7 @@ Each type thus has the following structure, where all fields are required:
     }
   }
 }
-````
+```
 
 ### References
 
@@ -63,7 +63,7 @@ It may also contain an optional `references` property which contains a map of re
     }
   },
 }
-````
+```
 
 ### Example
 
