@@ -16,7 +16,7 @@ Suggestions for new types of terms of service are welcome. To ensure a smooth pr
 
 3. **Suggest a name**
    - Propose a unique and descriptive name for the new terms type. While it doesn't have to match the service-provided names, it should be clear, internationally understandable, and as descriptive as possible.
-   - Ensure that the name is not already used in the collection.
+   - Ensure that the name is not already used in the list of the [terms types](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json).
 
 4. **Suggest a tryptich**
    - Provide a unique tryptich for the new terms type. The tryptich should characterize the commitment being taken in three dimensions:
@@ -34,7 +34,7 @@ Suggestions for new types of terms of service are welcome. To ensure a smooth pr
       - **URL of the terms:** Include a direct link to the terms document.
       - **Service provider:** Specify the entity or organization that provides these terms.
       - **Service-specific name:** Provide the title or name given to these terms by the service provider.
-   - As ths suggestions will only be considered for inclusion when there are at least three examples, it is highly encouraged to provide them directly. This ensures that the new type has a sufficient representation to be meaningful in the collection.
+   - As this suggestions will only be considered for inclusion when there are at least three examples, it is highly encouraged to provide them directly. This ensures that the new type has a sufficient representation to be meaningful in the database.
 
 7. **Discussion and validation**
    - The suggestion will be discussed by the community.
