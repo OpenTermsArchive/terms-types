@@ -83,7 +83,7 @@ It may also contain an optional `references` property which contains a map of re
 
 ## Add new terms type
 
-Contributions to expand the `terms-types` collection are welcome. If you'd like to suggest a new type, please follow the [process detailed in our CONTRIBUTING file](CONTRIBUTING.md).
+Contributions to expand the `terms-types` database are welcome. If you'd like to suggest a new type, please follow the [process detailed in our CONTRIBUTING file](CONTRIBUTING.md).
 
 ---
 

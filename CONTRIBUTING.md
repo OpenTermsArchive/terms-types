@@ -16,7 +16,7 @@ Suggestions for new types of terms of service are welcome. To ensure a smooth pr
 
 3. **Suggest a name**
    - Propose a unique and descriptive name for the new terms type. While it doesn't have to match the service-provided names, it should be clear, internationally understandable, and as descriptive as possible.
-   - Ensure that the name is not already used in the list of the [terms types](https://github.com/OpenTermsArchive/terms-types/blob/main/termsTypes.json).
+   - Ensure that the name is not already used in the [database](./termsTypes.json).
 
 4. **Suggest a tryptich**
    - Provide a unique tryptich for the new terms type. The tryptich should characterize the commitment being taken in three dimensions:
@@ -24,7 +24,7 @@ Suggestions for new types of terms of service are welcome. To ensure a smooth pr
      - **The Targeted Audience:** Specify who the terms are intended for (e.g., users, customers, employees).
      - **The Object of the Commitment:** Describe the main focus or purpose of the terms (e.g., privacy, usage, conduct).
    - The tryptich helps in distinguishing this new type from others and ensures clarity in its purpose.
-   - Ensure that the tryptich is not already used in the collection.
+   - Ensure that the tryptich is not already used in the [database](./termsTypes.json).
 
 5. **Optional: Add references**
    - Include any relevant references that may help in understanding the purpose of this type. This could include discussions, legal references, or other resources. References can provide valuable context and background information about the suggested terms type.
