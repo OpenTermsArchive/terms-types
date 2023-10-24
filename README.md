@@ -38,9 +38,9 @@ It should be the most commonly used and most internationally understandable for 
 
 In order to guide usage and disambiguate synonyms, each terms type is characterised by a tryptich along the three dimensions of the `commitment` that is being taken in it:
 
-- the `writer` of the document;
-- the targeted `audience`;
-- the `object` of the commitment.
+- the `writer` of the document, in most cases the service provider itself;
+- the targeted `audience` whose rights and duties are defined in the associated terms;
+- the `object` of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms.
 
 Each type thus has the following structure, where all fields are required:
 
@@ -48,9 +48,9 @@ Each type thus has the following structure, where all fields are required:
 {
   "<Terms Type Name>": {
     "commitment": {
-      "writer": "the `writer` of the document",
-      "audience": "the targeted `audience",
-      "object": "the `object` of the commitment"
+      "writer": "<writer>",
+      "audience": "<audience>",
+      "object": "<object>"
     }
   }
 }
