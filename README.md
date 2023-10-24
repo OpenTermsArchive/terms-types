@@ -1,6 +1,6 @@
 # Terms Types
 
-This repository contains a database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered.
+Terms Types are an ontology describing all known sorts of terms and conditions to the Open Terms Archive project.
 
 It aims at unifying the many names that services give to similar documents to enable comparison of terms across services no matter how they are named by their provider.
 
@@ -20,9 +20,11 @@ console.log(TERMS_TYPES['Terms of Service']); // Display `Terms of Service` deta
 console.log(Object.keys(TERMS_TYPES)); // Display all terms types
 ```
 
-## Data Structure
+## Data structure
 
-The `termsTypes.json` database JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) terms types.
+This repository contains a database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered.
+
+The `termsTypes.json` JSON file is a map of [title cased](https://en.wikipedia.org/wiki/Title_case) terms types.
 
 The types might not always match the exact name given by the service provider. For example, some providers might call their document “Terms and Conditions” or “Terms of Use” instead of “Terms of Service”. The terms type does not have to match the exact name, it only has to match the commitment that is taken.
 
