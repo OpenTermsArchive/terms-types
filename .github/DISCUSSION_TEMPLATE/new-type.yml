@@ -1,0 +1,50 @@
+title: "Add: "
+labels: ["New type"]
+body:
+- type: input
+  id: name
+  attributes:
+    label: Type name
+    description: The name of the terms type you would like to add.
+    placeholder: Business Privacy Policy
+  validations:
+    required: true
+- type: textarea
+  id: alternative-type-names
+  attributes:
+    label: Alternative type names
+    description: Different names for the same terms type.
+    placeholder: Business Users Privacy Policy, Commercial Privacy Policy
+- type: input
+  id: writer
+  attributes:
+    label: Writer
+    description: The writer of the document, in most cases the service provider itself.
+    placeholder: intermediation service provider
+- type: input
+  id: audience
+  attributes:
+    label: Audience
+    description: The targeted audience whose rights and duties are defined in the associated terms.
+    placeholder: business user
+- type: input
+  id: object
+  attributes:
+    label: Object
+    description: The object of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms.
+    placeholder: personal data of business users
+- type: textarea
+  id: examples
+  attributes:
+    label: Examples
+    description: |
+      Examples of documents of this new terms type with the URL address from which the document can be accessed, the title of the document provided at this URL and the name of the service. For example:
+      `https://www.partners.skyscanner.net/privacy-policy - Corporate Business Contact Privacy Notice - Skyscanner`
+    placeholder: | 
+      URL - Title - Service name
+- type: textarea
+  id: references
+  attributes:
+    label: References
+    description: Related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name.
+    placeholder: "Open Terms Archive discussion: https://github.com/OpenTermsArchive/engine/discussions/923"
