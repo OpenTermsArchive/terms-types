@@ -4,7 +4,83 @@
   "files": [
     ".all-contributors.md"
   ],
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "AaronjSugarman",
+      "name": "Aaron Sugarman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82889095?v=4",
+      "profile": "https://github.com/AaronjSugarman",
+      "contributions": [
+        "data"
+      ]
+    },
+    {
+      "login": "AdrienFines",
+      "name": "Adrien Fines",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41912392?v=4",
+      "profile": "https://github.com/AdrienFines",
+      "contributions": [
+        "data"
+      ]
+    },
+    {
+      "login": "clementbiron",
+      "name": "Clément Biron",
+      "avatar_url": "https://avatars.githubusercontent.com/u/364319?v=4",
+      "profile": "https://clementbiron.com/",
+      "contributions": [
+        "data"
+      ]
+    },
+    {
+      "login": "LVerneyPEReN",
+      "name": "Lucas Verney",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58298410?v=4",
+      "profile": "https://github.com/LVerneyPEReN",
+      "contributions": [
+        "data"
+      ]
+    },
+    {
+      "login": "martinratinaud",
+      "name": "Martin Ratinaud",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4191809?v=4",
+      "profile": "http://bit.ly/work-with-martin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MattiSG",
+      "name": "Matti Schneider",
+      "avatar_url": "https://avatars.githubusercontent.com/u/222463?v=4",
+      "profile": "https://mattischneider.fr/",
+      "contributions": [
+        "data",
+        "doc"
+      ]
+    },
+    {
+      "login": "Ndpnt",
+      "name": "Nicolas Dupont",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1098708?v=4",
+      "profile": "https://github.com/Ndpnt",
+      "contributions": [
+        "data",
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "michielbdejong",
+      "name": "Michiel de Jong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/408412?v=4",
+      "profile": "https://michielbdejong.com/",
+      "contributions": [
+        "data"
+      ]
+    }
+  ],
   "repoType": "github",
   "commitConvention": "none",
   "contributorsPerLine": 7
