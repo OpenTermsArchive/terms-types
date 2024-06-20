@@ -41,7 +41,6 @@ body:
     label: Examples
     description: |
       Examples of documents that contain terms of the suggested type, in the form `URL - Title - Service name`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and the name of the service.
-      e.g. `https://www.partners.skyscanner.net/privacy-policy - Corporate Business Contact Privacy Notice - Skyscanner`
     placeholder: | 
       https://www.partners.skyscanner.net/privacy-policy - Corporate Business Contact Privacy Notice - Skyscanner
   validations:
@@ -51,7 +50,7 @@ body:
   attributes:
     label: References
     description: | 
-      Related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name. e.g. `Digital Service Act: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2065`
+      Related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name.
     placeholder: "Digital Service Act: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2065"
 - type: textarea
   id: comments
