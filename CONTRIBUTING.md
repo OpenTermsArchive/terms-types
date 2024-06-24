@@ -66,3 +66,11 @@ Considering the decentralised and distributed usage of Open Terms Archive, it 
 The addition process is thus designed to add significant friction to the addition of new terms types, to ensure that only those that have demonstrated reusability and adoption are added to the database.
 
 The process itself, while progressively formalised, still provides ample arbitrary control to the Core Team, in order to avoid loopholes that could lead to mass additions. As the process is more regularly used, this power will be progressively reduced to make the community more autonomous.
+
+## List a new contributor in the Open Terms Archive website
+
+We acknowledge the efforts of our contributors by listing them on our [website](https://opentermsarchive.org) and this is made possible by the use of the [All Contributors bot](https://allcontributors.org/docs/en/bot/overview).
+
+All Contributors enables adding a contributor with a comment on an issue or pull request, without writing code. To do this, please use the [dedicated issue](https://github.com/OpenTermsArchive/terms-types/issues/31) on this repository.
+
+Please read the following [contributing guide](https://github.com/OpenTermsArchive/opentermsarchive.org/blob/main/CONTRIBUTING.md#list-a-new-contributor-in-the-open-terms-archive-website).
