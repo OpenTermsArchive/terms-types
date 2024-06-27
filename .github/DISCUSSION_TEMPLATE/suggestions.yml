@@ -10,12 +10,6 @@ body:
       Business Users Privacy Policy
       Commercial Privacy Policy
 - type: input
-  id: writer
-  attributes:
-    label: Writer
-    description: The author of the document, in most cases the service provider itself.
-    placeholder: service provider
-- type: input
   id: audience
   attributes:
     label: Audience
