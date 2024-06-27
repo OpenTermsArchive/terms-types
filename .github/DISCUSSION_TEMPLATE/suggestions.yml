@@ -1,4 +1,4 @@
-title: "Add <suggested new type name>"
+title: "<suggested new type name>"
 labels: ["New type"]
 body:
 - type: textarea
