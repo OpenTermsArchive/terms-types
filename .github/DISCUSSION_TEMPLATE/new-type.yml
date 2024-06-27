@@ -1,14 +1,6 @@
 title: "Add <suggested new type name>"
 labels: ["New type"]
 body:
-- type: input
-  id: name
-  attributes:
-    label: Type name
-    description: The name of the terms type to add, in Title Case.
-    placeholder: Business Privacy Policy
-  validations:
-    required: true
 - type: textarea
   id: alternative-type-names
   attributes:
