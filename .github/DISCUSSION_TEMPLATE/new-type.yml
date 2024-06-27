@@ -40,9 +40,9 @@ body:
   attributes:
     label: Examples
     description: |
-      Examples of documents that contain terms of the suggested type, in the form `URL - Title - Service name`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and the name of the service.
+      Examples of documents that contain terms of the suggested type, in the form `URL - Title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
     placeholder: | 
-      https://www.partners.skyscanner.net/privacy-policy - Corporate Business Contact Privacy Notice - Skyscanner
+      https://www.whatsapp.com/legal/privacy-policy-eea?lang=en - Privacy Policy - European Economic Area
   validations:
     required: true
 - type: textarea
