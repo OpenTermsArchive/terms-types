@@ -1,10 +1,14 @@
 title: "<suggested new type name>"
 labels: ["New type"]
 body:
+- type: markdown
+  attributes:
+    value: | 
+      Please share the details below to help the community to better understand your terms type suggestion.
 - type: textarea
   id: alternative-type-names
   attributes:
-    label: Alternative type names
+    label: What are the alternative names for this type?
     description: Known synonyms for the same terms type.
     placeholder: | 
       Business Users Privacy Policy
@@ -12,19 +16,19 @@ body:
 - type: input
   id: audience
   attributes:
-    label: Audience
+    label: Who is the target audience for these terms?
     description: The targeted audience whose rights and duties are defined in the associated terms.
     placeholder: business user
 - type: input
   id: object
   attributes:
-    label: Object
-    description: The object of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms.
+    label: What is the object of commitment in these terms?
+    description: i.e. the information or interaction whose handling will be constrained by the associated terms.
     placeholder: personal data of business users
 - type: textarea
   id: examples
   attributes:
-    label: Examples
+    label: Can you provide examples of documents containing these terms?
     description: |
       Examples of documents that contain terms of the suggested type, in the form `URL - Title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
     placeholder: | 
@@ -34,12 +38,12 @@ body:
 - type: textarea
   id: references
   attributes:
-    label: References
+    label: Are there any relevant references for this type?
     description: | 
-      Related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name.
+      Related references such as legal definitions, or the discussions that led to the choice of this name.
     placeholder: "Digital Service Act: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2065"
 - type: textarea
   id: comments
   attributes:
-    label: Comments
-    description: Any additional information that may help to understand the purpose of this type.
+    label: Do you have any additional comments or information?
+    description: That may help to understand the purpose of this type.
