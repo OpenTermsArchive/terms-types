@@ -4,11 +4,11 @@ body:
 - type: markdown
   attributes:
     value: | 
-## Thank you for suggesting a new type!
+      ## Thank you for suggesting a new type!
 
-**Terms types** enable discovering terms and comparing them across services. Once a type is in use, it is there to stay. It is therefore critical to ensure that each type is well defined and has actual uses. The questions below will help define the type and enable the Open Terms Archive community to discuss its relevance to the wider ecosystem.
+      **Terms types** enable discovering terms and comparing them across services. Once a type is in use, it is there to stay. It is therefore critical to ensure that each type is well defined and has actual uses. The questions below will help define the type and enable the Open Terms Archive community to discuss its relevance to the wider ecosystem.
 
-Before suggesting a new type, please make sure to go through the ones that have already been suggested. If your suggestion has already been made somewhere else, even under a different name, please upvote it and join the existing discussion.
+      Before suggesting a new type, please make sure to go through the ones that have already been suggested. If your suggestion has already been made somewhere else, even under a different name, please upvote it and join the existing discussion.
 - type: textarea
   id: alternative-type-names
   attributes:
