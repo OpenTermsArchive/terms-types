@@ -2,6 +2,7 @@ name: Validate document types
 
 on:
   push:
+    branches-ignore: [ main ]  # will be called from workflow call
   pull_request:
     types: [ opened, reopened ]
   workflow_call:
