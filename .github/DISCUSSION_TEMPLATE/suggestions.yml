@@ -4,31 +4,35 @@ body:
 - type: markdown
   attributes:
     value: | 
-      Please share the details below to help the community to better understand your terms type suggestion.
+## Thank you for suggesting a new type!
+
+**Terms types** enable discovering terms and comparing them across services. Once a type is in use, it is there to stay. It is therefore critical to ensure that each type is well defined and has actual uses. The questions below will help define the type and enable the Open Terms Archive community to discuss its relevance to the wider ecosystem.
+
+Before suggesting a new type, please make sure to go through the ones that have already been suggested. If your suggestion has already been made somewhere else, even under a different name, please upvote it and join the existing discussion.
 - type: textarea
   id: alternative-type-names
   attributes:
-    label: What are the alternative names for this type?
-    description: Known synonyms for the same terms type.
+    label: What are some alternative names for this type?
+    description: Known synonyms or other ideas you have for this same terms type.
     placeholder: | 
       Business Users Privacy Policy
       Commercial Privacy Policy
 - type: input
   id: audience
   attributes:
-    label: Who is the target audience for these terms?
-    description: The targeted audience whose rights and duties are defined in the associated terms.
+    label: Who is the target of these terms?
+    description: The entities whose rights and duties are defined in the associated terms.
     placeholder: business user
 - type: input
   id: object
   attributes:
     label: What is the object of commitment in these terms?
-    description: i.e. the information or interaction whose handling will be constrained by the associated terms.
+    description: The information handling or interaction that is constrained by the associated terms.
     placeholder: personal data of business users
 - type: textarea
   id: examples
   attributes:
-    label: Can you provide examples of documents containing these terms?
+    label: What are some documents containing these terms?
     description: |
       Examples of documents that contain terms of the suggested type, in the form `URL - Title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
     placeholder: | 
@@ -40,7 +44,7 @@ body:
   attributes:
     label: Are there any relevant references for this type?
     description: | 
-      Related references such as legal definitions, or the discussions that led to the choice of this name.
+      Related resources such as legal definitions, or the discussions that led to the choice of this name.
     placeholder: "Digital Service Act: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2065"
 - type: textarea
   id: comments
