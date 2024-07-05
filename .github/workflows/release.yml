@@ -23,11 +23,14 @@ jobs:
         id: release-changelog
         uses: OpenTermsArchive/changelog-action/release@v0.4.0
 
+      - name: Bump package version
+        run: npm --no-git-tag-version version ${{ steps.release-changelog.outputs.version }}
+
       - name: Update repository
         run: |
           git config user.name "Open Terms Archive Release Bot"
           git config user.email "release-bot@opentermsarchive.org"
-          git commit --message="Update changelog" CHANGELOG.md
+          git commit --message="Update changelog and version number" CHANGELOG.md package.json package-lock.json
           git tag v${{ steps.release-changelog.outputs.version }}
           git push origin
           git push --tags
