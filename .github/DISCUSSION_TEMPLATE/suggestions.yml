@@ -34,9 +34,9 @@ Before suggesting a new type, please make sure to go through the ones that have 
   attributes:
     label: What are some documents containing these terms?
     description: |
-      Examples of documents that contain terms of the suggested type, in the form `URL - Title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
+      Examples of documents that contain terms of the suggested type, in the form `Service name - URL - Document title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
     placeholder: | 
-      https://www.whatsapp.com/legal/privacy-policy-eea?lang=en - Privacy Policy - European Economic Area
+      WhatsApp - https://www.whatsapp.com/legal/privacy-policy-eea?lang=en - Privacy Policy - European Economic Area
   validations:
     required: true
 - type: textarea
