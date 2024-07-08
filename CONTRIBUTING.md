@@ -79,7 +79,7 @@ Please read the following [contributing guide](https://github.com/OpenTermsArchi
 
 When opening a pull request, it is required to fill in the changelog. It must be determined whether the changes made to the codebase impact users or not. These two cases are mutually exclusive and have different implications.
 
-### New or modified terms types or data structure
+### Modified terms types or data structure
 
 All changes to the codebase that impact users must be documented in the [`CHANGELOG.md`](./CHANGELOG.md) file, following the [Common Changelog](https://common-changelog.org) format with these additional specifications:
 
