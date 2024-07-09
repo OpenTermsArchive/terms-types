@@ -11,6 +11,10 @@ All changes that impact users of this module are documented in this file, in the
 - Use [@OpenTermsArchive/changelog-action](https://github.com/OpenTermsArchive/changelog-action/) in CI/CD
 - Decrease package size to half
 
+## Unreleased [no-release]
+
+_Modifications made in this changeset do not add, remove or alter any behavior, dependency, API or functionality of the software. They only change non-functional parts of the repository, such as the README file or CI workflows._
+
 ## 1.1.0 - 2023-10-25
 
 ### Added

@@ -1,59 +1,53 @@
-title: "Add <suggested new type name>"
+title: "<suggested new type name>"
 labels: ["New type"]
 body:
-- type: input
-  id: name
+- type: markdown
   attributes:
-    label: Type name
-    description: The name of the terms type to add, in Title Case.
-    placeholder: Business Privacy Policy
+    value: | 
+      ## Thank you for suggesting a new type!
+
+      **Terms types** enable discovering terms and comparing them across services. Once a type is in use, it is there to stay. It is therefore critical to ensure that each type is well defined and has actual uses. The questions below will help define the type and enable the Open Terms Archive community to discuss its relevance to the wider ecosystem.
+
+      ### If no existing [implemented or suggested type](https://github.com/OpenTermsArchive/terms-types/discussions) matches your suggestion, fill in the fields below and start a discussion!
+- type: textarea
+  id: examples
+  attributes:
+    label: What are some documents containing these terms?
+    description: |
+      Examples of documents that contain terms of the suggested type, in the form `Service name - URL - Document title - Jurisdiction`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and, if possible, the jurisdiction to which the document refers.
+    placeholder: | 
+      WhatsApp - https://www.whatsapp.com/legal/privacy-policy-eea?lang=en - Privacy Policy - European Economic Area
   validations:
     required: true
 - type: textarea
   id: alternative-type-names
   attributes:
-    label: Alternative type names
-    description: Known synonyms for the same terms type.
+    label: What are some alternative names for this type?
+    description: Known synonyms or other ideas you have for this same terms type.
     placeholder: | 
       Business Users Privacy Policy
       Commercial Privacy Policy
 - type: input
-  id: writer
-  attributes:
-    label: Writer
-    description: The author of the document, in most cases the service provider itself.
-    placeholder: service provider
-- type: input
   id: audience
   attributes:
-    label: Audience
-    description: The targeted audience whose rights and duties are defined in the associated terms.
+    label: Who is the target of these terms?
+    description: The entities whose rights and duties are defined in the associated terms.
     placeholder: business user
 - type: input
   id: object
   attributes:
-    label: Object
-    description: The object of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms.
+    label: What is the object of commitment in these terms?
+    description: The information handling or interaction that is constrained by the associated terms.
     placeholder: personal data of business users
-- type: textarea
-  id: examples
-  attributes:
-    label: Examples
-    description: |
-      Examples of documents that contain terms of the suggested type, in the form `URL - Title - Service name`, one per line. Provide the URL address at which the document can be accessed; the title of the document provided at this URL; and the name of the service.
-    placeholder: | 
-      https://www.partners.skyscanner.net/privacy-policy - Corporate Business Contact Privacy Notice - Skyscanner
-  validations:
-    required: true
 - type: textarea
   id: references
   attributes:
-    label: References
+    label: Are there any relevant references for this type?
     description: | 
-      Related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name.
+      Related resources such as legal definitions, or the discussions that led to the choice of this name.
     placeholder: "Digital Service Act: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2065"
 - type: textarea
   id: comments
   attributes:
-    label: Comments
-    description: Any additional information that may help to understand the purpose of this type.
+    label: Do you have any additional comments or information?
+    description: That may help to understand the purpose of this type.
