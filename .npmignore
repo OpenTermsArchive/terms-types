@@ -1,0 +1,6 @@
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+.all-contributors*
+.eslintrc.yml
+.github/*
+test/*

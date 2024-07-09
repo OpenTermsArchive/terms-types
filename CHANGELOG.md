@@ -1,9 +1,15 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the format is based on [Common Changelog](https://common-changelog.org).\
-Unlike Common Changelog, the `unreleased` section of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) is preserved with the addition of a tag to specify which type of release should be published and to foster discussions about it inside pull requests. This tag should be one of the names mandated by SemVer, within brackets: `[patch]`, `[minor]` or `[major]`. For example: `## Unreleased [minor]`.
+## Unreleased [minor]
+
+> Development of this release was supported by the [NGI0 Entrust Fund](https://nlnet.nl/entrust), a fund established by [NLnet](https://nlnet.nl/) with financial support from the European Commission's [Next Generation Internet](https://www.ngi.eu) programme, under the aegis of DG CNECT under grant agreement N°101069594. [Learn more](https://nlnet.nl/project/TOSDR-OTA/) on the NLNet website.
+
+### Changed
+
+- Use [@OpenTermsArchive/changelog-action](https://github.com/OpenTermsArchive/changelog-action/) in CI/CD
+- Decrease package size to half
 
 ## 1.1.0 - 2023-10-25
 
