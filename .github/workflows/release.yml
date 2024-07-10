@@ -39,7 +39,6 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
           branch: main
-          unprotect_reviews: true
           tags: true
           interval: 10  # seconds between checks
           pre_sleep: 15
