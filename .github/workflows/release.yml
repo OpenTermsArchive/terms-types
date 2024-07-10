@@ -39,6 +39,9 @@ jobs:
           branch: main
           unprotect_reviews: true
           tags: true
+          interval: 10  # seconds between checks
+          pre_sleep: 15
+          fail_fast: true
 
       - name: Publish to NPM public repository
         if: needs.changelog.outputs.release-type != 'no-release'
