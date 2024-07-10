@@ -30,7 +30,6 @@ jobs:
           git config user.name "Open Terms Archive Release Bot"
           git config user.email "release-bot@opentermsarchive.org"
           git commit --message="Update changelog" CHANGELOG.md package.json package-lock.json
-          git push origin
           git rev-parse v${{ steps.update-changelog.outputs.version }} || git tag v${{ steps.update-changelog.outputs.version }}
 
       - name: Run status checks for release commit on temporary branch # Use temporary branch to enable pushing commits to this branch protected by required status checks
