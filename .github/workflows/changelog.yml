@@ -2,6 +2,8 @@ name: Changelog
 
 on:
   pull_request:
+  push:
+    branches: [ 'push-action/**' ]  # enable testing required checks, see https://github.com/CasperWA/push-protected?tab=readme-ov-file#update-your-workflow
   workflow_call:
     outputs:
       release-type:
