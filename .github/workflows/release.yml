@@ -38,6 +38,13 @@ jobs:
           git tag v${{ steps.update-changelog.outputs.version }}
           git push origin --tags
 
+      - name: Run status checks for release commit on temporary branch # Use temporary branch to enable pushing commits to this branch protected by required status checks
+        uses: CasperWA/push-protected@v2
+        with:
+          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
+          branch: main
+          unprotect_reviews: true
+
       - name: Publish to NPM public repository
         if: needs.changelog.outputs.release-type != 'no-release'
         uses: JS-DevTools/npm-publish@v3
