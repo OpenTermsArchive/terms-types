@@ -39,6 +39,7 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
           branch: main
+          acceptable_conclusions: [ success, skipped ]  # changelog checks are skipped when not in a PR towards main branch
           tags: true
           interval: 10  # seconds between checks
           pre_sleep: 15
