@@ -34,7 +34,7 @@ jobs:
           git commit --message="Update changelog" CHANGELOG.md package.json package-lock.json
           [ ${{ needs.changelog.outputs.release-type }} != 'no-release' ] && git tag v${{ steps.update-changelog.outputs.version }}
 
-      - name: Run status checks for release commit on temporary branch # Use temporary branch to enable pushing commits to this branch protected by required status checks
+      - name: Run status checks for release commit on temporary branch  # use temporary branch to enable pushing commits to this branch protected by required status checks
         uses: CasperWA/push-protected@v2
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
