@@ -6,7 +6,7 @@ on:
   workflow_call:
 
 jobs:
-  validate:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
