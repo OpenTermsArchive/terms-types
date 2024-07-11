@@ -12,6 +12,7 @@ on:
 
 jobs:
   validate-changelog:
+    if: github.base_ref == 'main' || github.base_ref == 'test-main'  # check that changelog has valid unreleased changes only in PRs that could trigger a release
     runs-on: [ ubuntu-latest ]
     outputs:
       release-type: ${{ steps.validate-changelog.outputs.release-type }}
