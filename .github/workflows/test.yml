@@ -2,11 +2,9 @@ name: Validate document types
 
 on:
   push:
-    branches-ignore: [ main ]  # will be called from workflow call
-  pull_request:
-    types: [ opened, reopened ]
+    branches-ignore: [ main, test-main ]  # will be called from workflow call
   workflow_call:
-  
+
 jobs:
   validate:
     runs-on: ubuntu-latest
