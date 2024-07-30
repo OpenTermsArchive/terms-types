@@ -22,7 +22,7 @@ body:
 - type: textarea
   id: alternative-type-names
   attributes:
-    label: What are some alternative names for this type?
+    label: What could be some alternative names for this type?
     description: Known synonyms or other ideas you have for this same terms type.
     placeholder: | 
       Business Users Privacy Policy
@@ -30,8 +30,8 @@ body:
 - type: input
   id: audience
   attributes:
-    label: Who is the target of these terms?
-    description: The entities whose rights and duties are defined in the associated terms.
+    label: Whose rights and duties are defined in these terms?
+    description: The entities targeted by these terms.
     placeholder: business user
 - type: input
   id: object
