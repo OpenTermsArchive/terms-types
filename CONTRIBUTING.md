@@ -30,6 +30,10 @@ Ensure that this name (or any close one) is not already used in the [database](.
 
 Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
 
+#### Use singular
+
+For consistency, the term “Policy” in a type name should only be used singular (“policy”), never plural (“policies”). Similarly, all terms types should have a singular name.
+
 #### Alternative names
 
 Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `also known as` key.
