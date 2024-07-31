@@ -42,6 +42,17 @@ Provide at least the terms you intend to track as example of the new terms type,
 
 Include any relevant [references](./README.md#references) that may help in understanding the purpose of this type. This could include legal definitions, discussions, or any other resource that provides context or background information.
 
+References will then be listed in the type definition, with their URL and a title describing the content and source.
+
+#### Legal references
+
+Legal references will be prefixed by the flag emoji of the jurisdiction of enactment, will use the full name of the law, and will link to the official journal URL.
+
+Examples:
+
+- `"🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents"`
+- `"🇫🇷 Loi n°2005-102 du 11 février 2005 pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, article 47": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000001290363"`
+
 ### Build consensus
 
 Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the tryptich should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
