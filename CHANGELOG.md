@@ -12,6 +12,7 @@ All changes that impact users of this module are documented in this file, in the
 - Add Editorial Policy ([discussions/35](https://github.com/OpenTermsArchive/terms-types/discussions/35))
 - Add Hyperlinks Policy ([discussions/43](https://github.com/OpenTermsArchive/terms-types/discussions/43))
 - Add Whistleblower Policy ([discussions/37](https://github.com/OpenTermsArchive/terms-types/discussions/37))
+- Add `also known as` property for synonyms
 - Add leading jurisdiction emoji for legal references
 
 ## 1.2.0 - 2024-07-15
