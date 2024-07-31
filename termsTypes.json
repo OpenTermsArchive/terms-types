@@ -263,5 +263,15 @@
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/923"
     }
+  },
+  "Editorial Policy": {
+    "commitment": {
+      "writer": "service provider",
+      "audience": "end user",
+      "object": "writing and publishing standards and principles"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/35"
+    }
   }
 }
