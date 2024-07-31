@@ -1,5 +1,9 @@
 {
   "Terms of Service": {
+    "also known as": [
+      "Terms and Conditions",
+      "Terms of Use"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -14,6 +18,9 @@
     }
   },
   "Imprint": {
+    "also known as": [
+      "Legal Notice"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "everyone",
@@ -21,6 +28,9 @@
     }
   },
   "Trackers Policy": {
+    "also known as": [
+      "Cookies Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -28,6 +38,10 @@
     }
   },
   "Developer Terms": {
+    "also known as": [
+      "Developer Policy",
+      "Developer Agreement"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "developer",
@@ -35,6 +49,9 @@
     }
   },
   "Community Guidelines": {
+    "also known as": [
+      "Community Standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -49,6 +66,10 @@
     }
   },
   "Acceptable Use Policy": {
+    "also known as": [
+      "Fair Use Policy",
+      "Acceptable Usage Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -56,6 +77,10 @@
     }
   },
   "Restricted Use Policy": {
+    "also known as": [
+      "Limited Use Policy",
+      "Restriction Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -70,13 +95,23 @@
     }
   },
   "Copyright Claims Policy": {
+    "also known as": [
+      "Copyright Infringement Policy",
+      "Intellectual Property Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "copyrighted works rights holders",
-      "object": "how copyright complaints (DMCA…) will be handled"
+      "object": "how copyright complaints will be handled"
+    },
+    "references": {
+      "🇺🇸 Digital Millennium Copyright Act (DMCA)": "https://www.congress.gov/bill/105th-congress/house-bill/2281"
     }
   },
   "Law Enforcement Guidelines": {
+    "also known as": [
+      "Legal Process Guidelines"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "law enforcement authorities",
@@ -105,6 +140,10 @@
     }
   },
   "Brand Guidelines": {
+    "also known as": [
+      "Branding Policies",
+      "Trademark Usage Guidelines"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "developer",
@@ -112,6 +151,9 @@
     }
   },
   "Quality Guidelines": {
+    "also known as": [
+      "Quality standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -123,13 +165,24 @@
       "writer": "service provider",
       "audience": "data controllers (in the sense of GDPR)",
       "object": "end user personal data"
+    },
+    "references": {
+      "🇪🇺 GDPR, article 4§7": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:FULL#d1e1489-1-1",
+      "European Commission guidance": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/obligations/controllerprocessor/what-data-controller-or-data-processor_en"
     }
   },
   "Data Processor Agreement": {
+    "also known as": [
+      "Data Processing Agreement"
+    ],
     "commitment": {
       "writer": "service provider",
-      "audience": "data controllers (in the sense of GDPR)",
+      "audience": "data processors (in the sense of GDPR)",
       "object": "status of data processor (in the sense of GDPR) for the service provider"
+    },
+    "references": {
+      "🇪🇺 GDPR, article 4§8": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:FULL#d1e1489-1-1",
+      "European Commission guidance": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/obligations/controllerprocessor/what-data-controller-or-data-processor_en"
     }
   },
   "User Consent Policy": {
@@ -140,6 +193,11 @@
     }
   },
   "Closed Captioning Policy": {
+    "also known as": [
+      "Closed Captioning Guidelines",
+      "Captioning Policy",
+      "Closed Captioning Standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -161,6 +219,9 @@
     }
   },
   "Vulnerability Disclosure Policy": {
+    "also known as": [
+      "Security Disclosure Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "vulnerability reporter",
@@ -182,6 +243,9 @@
     }
   },
   "Conditions of Carriage": {
+    "also known as": [
+      "Transport Conditions"
+    ],
     "commitment": {
       "writer": "transportation operator (airline, railway, bus…)",
       "audience": "passenger",
@@ -203,6 +267,9 @@
     }
   },
   "Marketplace Sellers Conditions": {
+    "also known as": [
+      "Seller Agreement"
+    ],
     "commitment": {
       "writer": "online marketplace",
       "audience": "seller",
@@ -217,12 +284,15 @@
     },
     "references": {
       "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/902",
-      "Article 5 of P2B Regulation 2019/1150": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150#d1e868-57-1",
-      "Article 6a of Directive 2011/83/EU": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02011L0083-20220528#tocId12",
-      "Point (m) of Article 2(1) of Directive 2005/29/EC": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0029-20220528#tocId5"
+      "🇪🇺 Article 5 of P2B Regulation 2019/1150": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150#d1e868-57-1",
+      "🇪🇺 Article 6a of Directive 2011/83/EU": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02011L0083-20220528#tocId12",
+      "🇪🇺 Point (m) of Article 2(1) of Directive 2005/29/EC": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0029-20220528#tocId5"
     }
   },
   "Premium Partner Conditions": {
+    "also known as": [
+      "Premium Partner Program"
+    ],
     "commitment": {
       "writer": "intermediation service provider",
       "audience": "sellers of goods or services",
@@ -240,7 +310,7 @@
     },
     "references": {
       "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/940",
-      "P2B Regulation 2019/1150": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj"
+      "🇪🇺 P2B Regulation 2019/1150": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj"
     }
   },
   "Business Mediation Policy": {
@@ -251,7 +321,7 @@
     },
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
-      "P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
+      "🇪🇺 P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
     }
   },
   "Business Privacy Policy": {
@@ -262,6 +332,98 @@
     },
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/923"
+    }
+  },
+  "Editorial Policy": {
+    "also known as": [
+      "Editorial Guidelines"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "end user",
+      "object": "writing and publishing standards and principles"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/35"
+    }
+  },
+  "Anti-corruption Policy": {
+    "also known as": [
+      "Anti-bribery Policy"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "any person working directly or indirectly for the service provider",
+      "object": "risk mitigation and prevention of involvement in bribery"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/39",
+      "🇺🇸 Foreign Corrupt Practices Act": "https://www.justice.gov/criminal/criminal-fraud/foreign-corrupt-practices-act",
+      "🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents",
+      "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528",
+      "ISO 37001 Anti-bribery management systems": "https://www.iso.org/iso-37001-anti-bribery-management.html"
+    }
+  },
+  "Accessibility Statement": {
+    "also known as": [
+      "Accessibility Policy"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "everyone",
+      "object": "accessibility of the service to people with a disability"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/36",
+      "🇫🇷 Loi n°2005-102 du 11 février 2005 pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, article 47": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000001290363",
+      "🇬🇧 Public Sector Bodies Accessibility Regulations 2018/2022": "https://www.legislation.gov.uk/uksi/2018/952/made",
+      "🇱🇺 Loi du 28 mai 2019 relative à l’accessibilité des sites internet et des applications mobiles des organismes du secteur public": "https://legilux.public.lu/eli/etat/leg/loi/2019/05/28/a373/jo"
+    }
+  },
+  "Hyperlinks Policy": {
+    "commitment": {
+      "writer": "service provider",
+      "audience": "for outgoing hyperlinks, readers and contributors; for incoming hyperlinks, third-party authors who link to the service content",
+      "object": "quality of third-party targets of outgoing hyperlinks provided in content, and requirements for incoming hyperlinks in third-party content"
+    },
+    "also known as": [
+      "Links Policy",
+      "Linking Policy",
+      "External Links Policy",
+      "Outgoing Links Policy"
+    ],
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/43"
+    }
+  },
+  "Whistleblower Policy": {
+    "also known as": [
+      "Whistleblower Protections"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "employees",
+      "object": "reporting on suspected misconduct and illegal acts and prevention of retaliation"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/37",
+      "🇺🇸 Whistleblower Protection Act of 1989": "https://www.govinfo.gov/content/pkg/STATUTE-103/pdf/STATUTE-103-Pg16.pdf",
+      "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528",
+      "🇪🇺 Directive 2019/1937 of the European Parliament and of the Council of 23 October 2019 on the protection of persons who report breaches of Union law": "https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32019L1937"
+    }
+  },
+  "Affiliate Agreement": {
+    "also known as": [
+      "Affiliate Policy"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "affiliate",
+      "object": "earning commissions by promoting the service"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/41",
+      "Wikipedia page on Affiliate Marketing": "https://en.wikipedia.org/wiki/Affiliate_marketing"
     }
   }
 }

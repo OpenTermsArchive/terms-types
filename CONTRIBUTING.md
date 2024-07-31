@@ -30,6 +30,19 @@ Ensure that this name (or any close one) is not already used in the [database](.
 
 Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
 
+#### Use singular
+
+For consistency, the term “Policy” in a type name should only be used singular (“policy”), never plural (“policies”). Similarly, all terms types should have a singular name.
+
+#### Alternative names
+
+Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `also known as` key.
+
+Examples:
+
+- `"Hyperlinks Policy" : { "also known as": [ "Links Policy", "Linking Policy" ], … }`
+- `"Whistleblower Policy": { "also known as": [ "Whistleblower Protections" ], … }`
+
 ### Provide examples
 
 Provide at least the terms you intend to track as example of the new terms type, with relevant information on its source and context:
@@ -41,6 +54,17 @@ Provide at least the terms you intend to track as example of the new terms type,
 ### Add references
 
 Include any relevant [references](./README.md#references) that may help in understanding the purpose of this type. This could include legal definitions, discussions, or any other resource that provides context or background information.
+
+References will then be listed in the type definition, with their URL and a title describing the content and source.
+
+#### Legal references
+
+Legal references will be prefixed by the flag emoji of the jurisdiction of enactment, will use the full name of the law, and will link to the official journal URL.
+
+Examples:
+
+- `"🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents"`
+- `"🇫🇷 Loi n°2005-102 du 11 février 2005 pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, article 47": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000001290363"`
 
 ### Build consensus
 
@@ -57,7 +81,7 @@ Once:
 - a consensus has been reached on the name;
 - at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
 
-Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database.
+Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database. To ease tracking and participation, each pull request will contain only one type addition, and will link to the discussion.
 
 ## Governance considerations
 
