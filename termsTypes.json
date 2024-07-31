@@ -102,7 +102,10 @@
     "commitment": {
       "writer": "service provider",
       "audience": "copyrighted works rights holders",
-      "object": "how copyright complaints (DMCA…) will be handled"
+      "object": "how copyright complaints will be handled"
+    },
+    "references": {
+      "🇺🇸 Digital Millennium Copyright Act (DMCA)": "https://www.congress.gov/bill/105th-congress/house-bill/2281"
     }
   },
   "Law Enforcement Guidelines": {
@@ -162,6 +165,10 @@
       "writer": "service provider",
       "audience": "data controllers (in the sense of GDPR)",
       "object": "end user personal data"
+    },
+    "references": {
+      "🇪🇺 GDPR, article 4§7": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:FULL#d1e1489-1-1",
+      "European Commission guidance": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/obligations/controllerprocessor/what-data-controller-or-data-processor_en"
     }
   },
   "Data Processor Agreement": {
@@ -172,6 +179,10 @@
       "writer": "service provider",
       "audience": "data controllers (in the sense of GDPR)",
       "object": "status of data processor (in the sense of GDPR) for the service provider"
+    },
+    "references": {
+      "🇪🇺 GDPR, article 4§8": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG&toc=OJ:L:2016:119:FULL#d1e1489-1-1",
+      "European Commission guidance": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/obligations/controllerprocessor/what-data-controller-or-data-processor_en"
     }
   },
   "User Consent Policy": {
