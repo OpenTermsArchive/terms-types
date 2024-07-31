@@ -8,6 +8,7 @@ All changes that impact users of this module are documented in this file, in the
 
 - Add Editorial Policy ([discussions/35](https://github.com/OpenTermsArchive/terms-types/discussions/35))
 - Add Anti-corruption Policy ([discussions/39](https://github.com/OpenTermsArchive/terms-types/discussions/39))
+- Add leading jurisdiction emoji for legal references
 
 ## 1.2.0 - 2024-07-15
 
