@@ -16,6 +16,7 @@ All changes that impact users of this module are documented in this file, in the
 - Add `Whistleblower Policy` ([discussions/37](https://github.com/OpenTermsArchive/terms-types/discussions/37))
 - Add `also known as` property for synonyms
 - Add leading jurisdiction emoji for legal references
+- Add `also known as` data
 
 ## 1.2.0 - 2024-07-15
 

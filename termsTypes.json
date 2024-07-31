@@ -1,5 +1,9 @@
 {
   "Terms of Service": {
+    "also known as": [
+      "Terms and Conditions",
+      "Terms of Use"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -14,6 +18,9 @@
     }
   },
   "Imprint": {
+    "also known as": [
+      "Legal Notice"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "everyone",
@@ -21,6 +28,9 @@
     }
   },
   "Trackers Policy": {
+    "also known as": [
+      "Cookies Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -28,6 +38,10 @@
     }
   },
   "Developer Terms": {
+    "also known as": [
+      "Developer Policy",
+      "Developer Agreement"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "developer",
@@ -35,6 +49,9 @@
     }
   },
   "Community Guidelines": {
+    "also known as": [
+      "Community Standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -49,6 +66,10 @@
     }
   },
   "Acceptable Use Policy": {
+    "also known as": [
+      "Fair Use Policy",
+      "Acceptable Usage Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -56,6 +77,10 @@
     }
   },
   "Restricted Use Policy": {
+    "also known as": [
+      "Limited Use Policy",
+      "Restriction Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -70,6 +95,10 @@
     }
   },
   "Copyright Claims Policy": {
+    "also known as": [
+      "Copyright Infringement Policy",
+      "Intellectual Property Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "copyrighted works rights holders",
@@ -77,6 +106,9 @@
     }
   },
   "Law Enforcement Guidelines": {
+    "also known as": [
+      "Legal Process Guidelines"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "law enforcement authorities",
@@ -105,6 +137,10 @@
     }
   },
   "Brand Guidelines": {
+    "also known as": [
+      "Branding Policies",
+      "Trademark Usage Guidelines"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "developer",
@@ -112,6 +148,9 @@
     }
   },
   "Quality Guidelines": {
+    "also known as": [
+      "Quality standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -126,6 +165,9 @@
     }
   },
   "Data Processor Agreement": {
+    "also known as": [
+      "Data Processing Agreement"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "data controllers (in the sense of GDPR)",
@@ -140,6 +182,11 @@
     }
   },
   "Closed Captioning Policy": {
+    "also known as": [
+      "Closed Captioning Guidelines",
+      "Captioning Policy",
+      "Closed Captioning Standards"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -161,6 +208,9 @@
     }
   },
   "Vulnerability Disclosure Policy": {
+    "also known as": [
+      "Security Disclosure Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "vulnerability reporter",
@@ -182,6 +232,9 @@
     }
   },
   "Conditions of Carriage": {
+    "also known as": [
+      "Transport Conditions"
+    ],
     "commitment": {
       "writer": "transportation operator (airline, railway, bus…)",
       "audience": "passenger",
@@ -203,6 +256,9 @@
     }
   },
   "Marketplace Sellers Conditions": {
+    "also known as": [
+      "Seller Agreement"
+    ],
     "commitment": {
       "writer": "online marketplace",
       "audience": "seller",
@@ -223,6 +279,9 @@
     }
   },
   "Premium Partner Conditions": {
+    "also known as": [
+      "Premium Partner Program"
+    ],
     "commitment": {
       "writer": "intermediation service provider",
       "audience": "sellers of goods or services",
