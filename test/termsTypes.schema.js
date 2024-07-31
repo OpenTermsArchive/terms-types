@@ -7,6 +7,13 @@ const schema = {
       additionalProperties: false,
       required: ['commitment'],
       properties: {
+        'also known as': {
+          type: 'array',
+          items: {
+            type: 'string'
+          },
+          minItems: 1
+        },
         commitment: {
           type: 'object',
           additionalProperties: false,

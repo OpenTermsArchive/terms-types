@@ -30,6 +30,15 @@ Ensure that this name (or any close one) is not already used in the [database](.
 
 Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
 
+#### Alternative names
+
+Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `also known as` key.
+
+Examples:
+
+- `"Hyperlinks Policy" : { "also known as": [ "Links Policy", "Linking Policy" ], … }`
+- `"Whistleblower Policy": { "also known as": [ "Whistleblower Protections" ], … }`
+
 ### Provide examples
 
 Provide at least the terms you intend to track as example of the new terms type, with relevant information on its source and context:

@@ -265,6 +265,9 @@
     }
   },
   "Editorial Policy": {
+    "also known as": [
+      "Editorial Guidelines"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "end user",
@@ -275,6 +278,9 @@
     }
   },
   "Anti-corruption Policy": {
+    "also known as": [
+      "Anti-bribery Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "any person working directly or indirectly for the service provider",
@@ -289,6 +295,9 @@
     }
   },
   "Accessibility Statement": {
+    "also known as": [
+      "Accessibility Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "everyone",
@@ -307,11 +316,20 @@
       "audience": "for outgoing hyperlinks, readers and contributors; for incoming hyperlinks, third-party authors who link to the service content",
       "object": "quality of third-party targets of outgoing hyperlinks provided in content, and requirements for incoming hyperlinks in third-party content"
     },
+    "also known as": [
+      "Links Policy",
+      "Linking Policy",
+      "External Links Policy",
+      "Outgoing Links Policy"
+    ],
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/43"
     }
   },
   "Whistleblower Policy": {
+    "also known as": [
+      "Whistleblower Protections"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "employees",
@@ -325,6 +343,9 @@
     }
   },
   "Affiliate Agreement": {
+    "also known as": [
+      "Affiliate Policy"
+    ],
     "commitment": {
       "writer": "service provider",
       "audience": "affiliate",
