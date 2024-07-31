@@ -77,7 +77,7 @@ Once:
 - a consensus has been reached on the name;
 - at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
 
-Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database.
+Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database. To ease tracking and participation, each pull request will contain only one type addition, and will link to the discussion.
 
 ## Governance considerations
 
