@@ -300,5 +300,15 @@
       "🇬🇧 Public Sector Bodies Accessibility Regulations 2018/2022": "https://www.legislation.gov.uk/uksi/2018/952/made",
       "🇱🇺 Loi du 28 mai 2019 relative à l’accessibilité des sites internet et des applications mobiles des organismes du secteur public": "https://legilux.public.lu/eli/etat/leg/loi/2019/05/28/a373/jo"
     }
+  },
+  "Hyperlinks Policy": {
+    "commitment": {
+      "writer": "service provider",
+      "audience": "for outgoing hyperlinks, readers and contributors; for incoming hyperlinks, third-party authors who link to the service content",
+      "object": "quality of third-party targets of outgoing hyperlinks provided in content, and requirements for incoming hyperlinks in third-party content"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/43"
+    }
   }
 }
