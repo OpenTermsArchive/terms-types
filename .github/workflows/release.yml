@@ -35,7 +35,7 @@ jobs:
           [ ${{ needs.changelog.outputs.release-type }} != 'no-release' ] && git tag v${{ steps.update-changelog.outputs.version }}
 
       - name: Run status checks for release commit on temporary branch  # use temporary branch to enable pushing commits to this branch protected by required status checks
-        uses: CasperWA/push-protected@v2.16  # 2.16 minimum is required to benefit from updated defaults
+        uses: CasperWA/push-protected@v2.16.0  # 2.16 minimum is required to benefit from updated defaults
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
           branch: main
