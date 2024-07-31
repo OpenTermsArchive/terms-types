@@ -8,7 +8,7 @@ If you need to track some terms for a service, you might encounter cases when no
 
 ### Define the triptych
 
-Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the triptych](./README.md#how-to-define-the-tryptich) that describes unambiguously the type of these terms.
+Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the triptych](./README.md#how-to-define-the-triptych) that describes unambiguously the type of these terms.
 
 Once you have defined the triptych for the terms you intend to track, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking 🙂
 
