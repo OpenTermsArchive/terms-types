@@ -37,7 +37,7 @@ jobs:
         uses: CasperWA/push-protected@v2.16.0  # 2.16 minimum is required to benefit from updated defaults
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
-          branch: main
+          branch: ${{ github.base_ref }}
           interval: 10  # seconds between checks
           pre_sleep: 15
           fail_fast: true
@@ -53,6 +53,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPMJS_ACCESS_TOKEN }}
+          dry-run: ${{ github.base_ref != 'main' }}
 
       - name: Publish GitHub release
         if: needs.changelog.outputs.release-type != 'no-release'
