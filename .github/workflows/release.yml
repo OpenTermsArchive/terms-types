@@ -32,7 +32,7 @@ jobs:
           git config user.name "Open Terms Archive Release Bot"
           git config user.email "release-bot@opentermsarchive.org"
           git commit --message="Update changelog" CHANGELOG.md package.json package-lock.json
-          [ ${{ needs.changelog.outputs.release-type }} != 'no-release' ] && git tag v${{ steps.update-changelog.outputs.version }}
+          if [ ${{ needs.changelog.outputs.release-type }} != 'no-release' ]; then git tag v${{ steps.update-changelog.outputs.version }}; fi
 
       - name: Run status checks for release commit on temporary branch  # use temporary branch to enable pushing commits to this branch protected by required status checks
         uses: CasperWA/push-protected@v2.16.0  # 2.16 minimum is required to benefit from updated defaults
