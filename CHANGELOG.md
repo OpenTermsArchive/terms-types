@@ -2,9 +2,13 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased [no-release]
+## Unreleased [patch]
 
-_Modifications made in this changeset do not add, remove or alter any behavior, dependency, API or functionality of the software. They only change non-functional parts of the repository, such as the README file or CI workflows._
+> Development of this release was supported by the [NGI0 Entrust Fund](https://nlnet.nl/entrust), a fund established by [NLnet](https://nlnet.nl/) with financial support from the European Commission's [Next Generation Internet](https://www.ngi.eu) programme, under the aegis of DG CNECT under grant agreement N°101069594. [Learn more](https://nlnet.nl/project/TOSDR-OTA/) on the NLNet website.
+
+### Fixed
+
+- Bring back CD
 
 ## 1.2.0 - 2024-07-15
 
