@@ -62,4 +62,4 @@ jobs:
         with:
           tag_name: v${{ steps.update-changelog.outputs.version }}
           body: ${{ steps.update-changelog.outputs.content }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
