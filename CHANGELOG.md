@@ -2,6 +2,22 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased [minor]
+
+> Development of this release was supported by the [NGI0 Entrust Fund](https://nlnet.nl/entrust), a fund established by [NLnet](https://nlnet.nl/) with financial support from the European Commission's [Next Generation Internet](https://www.ngi.eu) programme, under the aegis of DG CNECT under grant agreement N°101069594. [Learn more](https://nlnet.nl/project/TOSDR-OTA/) on the NLNet website.
+
+### Added
+
+- Add `Accessibility Statement` ([discussions/36](https://github.com/OpenTermsArchive/terms-types/discussions/36))
+- Add `Affiliate Agreement` ([discussions/41](https://github.com/OpenTermsArchive/terms-types/discussions/41))
+- Add `Anti-corruption Policy` ([discussions/39](https://github.com/OpenTermsArchive/terms-types/discussions/39))
+- Add `Editorial Policy` ([discussions/35](https://github.com/OpenTermsArchive/terms-types/discussions/35))
+- Add `Hyperlinks Policy` ([discussions/43](https://github.com/OpenTermsArchive/terms-types/discussions/43))
+- Add `Whistleblower Policy` ([discussions/37](https://github.com/OpenTermsArchive/terms-types/discussions/37))
+- Add `also known as` property for synonyms
+- Add leading jurisdiction emoji for legal references
+- Add legal references and `also known as` data
+
 ## 1.2.1 - 2024-08-12
 
 _Full changeset and discussions: [#61](https://github.com/OpenTermsArchive/terms-types/pull/61)._

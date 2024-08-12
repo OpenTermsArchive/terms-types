@@ -42,6 +42,8 @@ Provide at least the terms you intend to track as example of the new terms type,
 
 Include any relevant [references](./README.md#references) that may help in understanding the purpose of this type. This could include legal definitions, discussions, or any other resource that provides context or background information.
 
+References will then be listed in the type definition, with their URL and a title describing the content and source.
+
 ### Build consensus
 
 Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the triptych should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
@@ -57,7 +59,7 @@ Once:
 - a consensus has been reached on the name;
 - at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
 
-Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database.
+Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database. To ease tracking and participation, each pull request will contain only one type addition, and will link to the discussion.
 
 ## Governance considerations
 

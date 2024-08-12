@@ -34,6 +34,19 @@ The name of each type is written with title capitalisation (every noun is capita
 
 It should be the most commonly used and most internationally understandable for this type.
 
+#### Use singular
+
+For consistency, the term “Policy” in a type name should only be used singular (“policy”), never plural (“policies”). Similarly, all terms types should have a singular name.
+
+### Alternative names
+
+Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `also known as` key.
+
+Examples:
+
+- `"Hyperlinks Policy" : { "also known as": [ "Links Policy", "Linking Policy" ], … }`
+- `"Whistleblower Policy": { "also known as": [ "Whistleblower Protections" ], … }`
+
 ### Triptych
 
 In order to guide usage and disambiguate synonyms, each terms type is characterised by a triptych along the three dimensions of the `commitment` that is being taken in it:
@@ -71,21 +84,32 @@ It may also contain an optional `references` property which contains a map of re
 }
 ```
 
+#### Legal references
+
+Legal references will be prefixed by the flag emoji of the jurisdiction of enactment, will use the full name of the law, and will link to the official journal URL.
+
+Examples:
+
+- `"🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents"`
+- `"🇫🇷 Loi n°2005-102 du 11 février 2005 pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, article 47": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000001290363"`
+
 ### Example
 
 ```json
-{
-  "Business Mediation Policy": {
-    "commitment": {
-      "writer": "intermediation service provider",
-      "audience": "business users",
-      "object": "mediation process after internal complaints handling failed"
-    },
-    "references": {
-      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
-      "P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
-    }
+"Whistleblower Policy": {
+  "also known as": [
+    "Whistleblower Protections"
+  ],
+  "commitment": {
+    "writer": "service provider",
+    "audience": "employees",
+    "object": "reporting on suspected misconduct and illegal acts and prevention of retaliation"
   },
+  "references": {
+    "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/37",
+    "🇺🇸 Whistleblower Protection Act of 1989": "https://www.govinfo.gov/content/pkg/STATUTE-103/pdf/STATUTE-103-Pg16.pdf",
+    "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528"
+  }
 }
 ```
 
