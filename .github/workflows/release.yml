@@ -46,7 +46,7 @@ jobs:
       - name: Publish Git tag
         if: needs.changelog.outputs.release-type != 'no-release'
         run: |
-          git tag v${{ steps.update-changelog.outputs.version }}
+          git tag v${{ steps.update-changelog.outputs.version }}-test
           git push --tags
 
       - name: Publish to NPM public repository
@@ -60,6 +60,6 @@ jobs:
         if: needs.changelog.outputs.release-type != 'no-release'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.update-changelog.outputs.version }}
-          body: ${{ steps.update-changelog.outputs.content }}
+          tag_name: v${{ steps.update-changelog.outputs.version }}-test
+          body: TEST ${{ steps.update-changelog.outputs.content }}
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
