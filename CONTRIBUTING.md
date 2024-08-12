@@ -6,11 +6,11 @@ If you need to track some terms for a service, you might encounter cases when no
 
 ## Process
 
-### Define the tryptich
+### Define the triptych
 
-Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the tryptich](./README.md#how-to-define-the-tryptich) that describes unambiguously the type of these terms.
+Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the triptych](./README.md#how-to-define-the-triptych) that describes unambiguously the type of these terms.
 
-Once you have defined the tryptich for the terms you intend to track, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking 🙂
+Once you have defined the triptych for the terms you intend to track, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking 🙂
 
 ### Open a discussion
 
@@ -22,7 +22,7 @@ If no discussion seems to match the type you are interested in adding, [start a 
 
 Propose a unique and descriptive name for the new terms type.
 
-It should be the most commonly used and most internationally understandable for this type. It doesn't have to, and probably should not, match the service-provided name. Make use of tools such as Google Trends, Linguee and thesaurus to find the name that strikes the best balance between genericity, precision and multilingualism.
+It should be the most commonly used and most internationally understandable for this type. It doesn't have to, and probably should not, match the service-provided name. Make use of tools such as Google Trends, Linguee and thesaurus to find the name that strikes the best balance between generality, precision and multilingualism.
 
 > For example, the “Imprint” type is [called this way](https://github.com/OpenTermsArchive/engine/issues/801) as a balance between the French “mentions légales”, the German “impressum”, and other considerations.
 
@@ -46,7 +46,7 @@ References will then be listed in the type definition, with their URL and a titl
 
 ### Build consensus
 
-Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the tryptich should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
+Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the triptych should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
 
 In order to ensure global relevance, your suggestion will only be considered for inclusion when there are at least three examples of such terms, each from different service providers. You are welcome to provide several examples on your own.
 
@@ -55,7 +55,7 @@ In order to ensure global relevance, your suggestion will only be considered for
 Once:
 
 - at least three examples from different service providers have been given;
-- a consensus has been reached on the tryptich;
+- a consensus has been reached on the triptych;
 - a consensus has been reached on the name;
 - at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
 

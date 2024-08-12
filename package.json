@@ -1,6 +1,6 @@
 {
   "name": "@opentermsarchive/terms-types",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered",
   "homepage": "https://github.com/OpenTermsArchive/terms-document-types#readme",
   "bugs": {
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "ajv": "^8.11.2",
-    "ajv-formats": "^2.1.1",
+    "ajv-formats": "^3.0.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-json-format": "^2.0.1"

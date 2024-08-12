@@ -18,6 +18,16 @@ All changes that impact users of this module are documented in this file, in the
 - Add leading jurisdiction emoji for legal references
 - Add legal references and `also known as` data
 
+## 1.2.1 - 2024-08-12
+
+_Full changeset and discussions: [#61](https://github.com/OpenTermsArchive/terms-types/pull/61)._
+
+> Development of this release was supported by the [NGI0 Entrust Fund](https://nlnet.nl/entrust), a fund established by [NLnet](https://nlnet.nl/) with financial support from the European Commission's [Next Generation Internet](https://www.ngi.eu) programme, under the aegis of DG CNECT under grant agreement N°101069594. [Learn more](https://nlnet.nl/project/TOSDR-OTA/) on the NLNet website.
+
+### Changed
+
+- Update dependencies
+
 ## 1.2.0 - 2024-07-15
 
 _Full changeset and discussions: [#57](https://github.com/OpenTermsArchive/terms-types/pull/57)._
