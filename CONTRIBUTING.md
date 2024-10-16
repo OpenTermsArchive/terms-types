@@ -77,7 +77,7 @@ Changes that require an adjustment in the infrastructure, they are considered as
 For non-functional changes (e.g., documentation, CI workflows) that do not impact users and should not trigger a release, it must be clearly indicated that documenting these changes in the changelog is unnecessary by adding the following content in its entirety to the changelog:
 
 ```markdown
-### Unreleased [no-release]
+## Unreleased [no-release]
 
 _Modifications made in this changeset do not add, remove or alter any behavior, dependency, API or functionality of the software. They only change non-functional parts of the repository, such as the README file or CI workflows._
 ```
