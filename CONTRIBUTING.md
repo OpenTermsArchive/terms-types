@@ -1,65 +1,41 @@
-# Add new Terms Types
+First of all, thanks for taking the time to contribute! 🎉👍
+
+## Table of Contents
+
+- [Add new Terms Types](#add-new-terms-types)
+  - [Open a discussion](#open-a-discussion)
+  - [Integration process](#integration-process)
+- [Governance considerations](#governance-considerations)
+- [List a new contributor](#list-a-new-contributor)
+- [Changelog](#changelog)
+  - [Modified terms types or data structure](#modified-terms-types-or-data-structure)
+  - [Changes that do not impact users](#changes-that-do-not-impact-users)
+
+- - -
+
+## Add new Terms Types
 
 Every terms tracked in Open Terms Archive must have a type. Each service can have only one terms of a given type.
 
 If you need to track some terms for a service, you might encounter cases when no matching type seems to be available in the list of supported terms types.
 
-## Process
-
-### Define the triptych
-
-Since each service provider can come up with its own choice of name for the same terms types, we first have to [define the triptych](./README.md#how-to-define-the-triptych) that describes unambiguously the type of these terms.
-
-Once you have defined the triptych for the terms you intend to track, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking 🙂
-
 ### Open a discussion
 
-If no existing type matches the terms you intend to track, check the open discussions in the category “New Type” in the [Discussions section](https://github.com/opentermsarchive/terms-types/discussions) of this repository.
+First of all, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking. 
 
-If no discussion seems to match the type you are interested in adding, [start a new “New Type” discussion](https://github.com/OpenTermsArchive/terms-types/discussions/new?category=new-type) and call it “Add _your proposed terms type name_”.
+Then check the [open discussions](https://github.com/opentermsarchive/terms-types/discussions) for this repository to make sure that there is not already a discussion about the type you intend to add.
 
-### Define the type name
+If no discussion seems to match the type you are interested in adding, [start a new discussion](https://github.com/OpenTermsArchive/terms-types/discussions/new?category=submitted) by filling in this form.
 
-Propose a unique and descriptive name for the new terms type.
+### Integration process
 
-It should be the most commonly used and most internationally understandable for this type. It doesn't have to, and probably should not, match the service-provided name. Make use of tools such as Google Trends, Linguee and thesaurus to find the name that strikes the best balance between generality, precision and multilingualism.
+The Core Team reviews the term type additions categorized as `Submitted` to ensure that all the necessary information is gathered and that at least 5 examples are provided by maximising industry and jurisdiction diversity. When this is the case, the discussion is categorized as `Qualified` and opened up to the community.
 
-> For example, the “Imprint” type is [called this way](https://github.com/OpenTermsArchive/engine/issues/801) as a balance between the French “mentions légales”, the German “impressum”, and other considerations.
+Build consensus by publicizing your suggestion across Open Terms Archive channels and engaging the community. Throughout the discussion, the data should be critically examined, considering international perspectives on phrasing and the variety of definitions across jurisdictions.
 
-Ensure that this name (or any close one) is not already used in the [database](./termsTypes.json).
+Once a consensus has been reached and at least 2 weeks have passed since the discussion was opened to ensure visibility within the community, a pull request for the addition to the database must be submitted. To facilitate tracking and participation, each pull request will contain only one type addition and will link to the corresponding discussion.
 
-Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
-
-### Provide examples
-
-Provide at least the terms you intend to track as example of the new terms type, with relevant information on its source and context:
-
-- Include a direct link to the source document.
-- Name the service provider and describe its service.
-- Provider-given terms name: provide the title or name given to these terms by the service provider.
-
-### Add references
-
-Include any relevant [references](./README.md#references) that may help in understanding the purpose of this type. This could include legal definitions, discussions, or any other resource that provides context or background information.
-
-References will then be listed in the type definition, with their URL and a title describing the content and source.
-
-### Build consensus
-
-Publicise your suggestion across Open Terms Archive channels and engage the community. Throughout the discussion, the name and the triptych should be challenged, taking into account international perspectives on phrasings and the variety of definitions across jurisdictions.
-
-In order to ensure global relevance, your suggestion will only be considered for inclusion when there are at least three examples of such terms, each from different service providers. You are welcome to provide several examples on your own.
-
-### Integration
-
-Once:
-
-- at least three examples from different service providers have been given;
-- a consensus has been reached on the triptych;
-- a consensus has been reached on the name;
-- at least 2 weeks have elapsed since the opening of the discussion, to ensure visibility throughout the community.
-
-Then the Open Terms Archive Core Team will review and validate the suggestion, considering factors like uniqueness, clarity, and relevance. If validated, the discussion will be turned into a pull request for addition into the database. To ease tracking and participation, each pull request will contain only one type addition, and will link to the discussion.
+The Core Team will then review the pull request, taking into account factors such as uniqueness, clarity, and relevance.
 
 ## Governance considerations
 
@@ -69,7 +45,7 @@ The addition process is thus designed to add significant friction to the additio
 
 The process itself, while progressively formalised, still provides ample arbitrary control to the Core Team, in order to avoid loopholes that could lead to mass additions. As the process is more regularly used, this power will be progressively reduced to make the community more autonomous.
 
-## Contributors list
+## List a new contributor
 
 We acknowledge the efforts of our contributors by listing them on our [website](https://opentermsarchive.org) and this is made possible by the use of the [All Contributors bot](https://allcontributors.org/docs/en/bot/overview).
 
@@ -85,7 +61,7 @@ When opening a pull request, it is required to fill in the changelog. It must be
 
 All changes to the codebase that impact users must be documented in the [`CHANGELOG.md`](./CHANGELOG.md) file, following the [Common Changelog](https://common-changelog.org) format with these additional specifications:
 
-1. The `unreleased` section of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) must be added in the changelog with the addition of a tag to specify which type of release should be published and to foster discussions about it inside pull requests. This tag should be one of the names mandated by SemVer, within brackets: `[patch]`, `[minor]` or `[major]`. For example: `## Unreleased [minor]`.<br>
+1. The `unreleased` section of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) must be added in the changelog with the addition of a tag to specify which type of release should be published and to foster discussions about it inside pull requests. This tag should be one of the names mandated by SemVer, within brackets: `[patch]`, `[minor]` or `[major]`. For example: `### Unreleased [minor]`.<br>
 Changes that require an adjustment in the infrastructure, they are considered as a breaking change in order to notify Collection operators about the need to update their [deployment](https://github.com/OpenTermsArchive/deployment/blob/main/CHANGELOG.md) dependency accordingly.
 
 2. Each listed change must provide an actionable way to adapt the user’s codebase, either directly in the changelog or through instructions or links.
@@ -101,7 +77,7 @@ Changes that require an adjustment in the infrastructure, they are considered as
 For non-functional changes (e.g., documentation, CI workflows) that do not impact users and should not trigger a release, it must be clearly indicated that documenting these changes in the changelog is unnecessary by adding the following content in its entirety to the changelog:
 
 ```markdown
-## Unreleased [no-release]
+### Unreleased [no-release]
 
 _Modifications made in this changeset do not add, remove or alter any behavior, dependency, API or functionality of the software. They only change non-functional parts of the repository, such as the README file or CI workflows._
 ```
