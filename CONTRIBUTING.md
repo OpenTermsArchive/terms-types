@@ -27,6 +27,8 @@ Then check the [open discussions](https://github.com/opentermsarchive/terms-type
 
 If no discussion seems to match the type you are interested in adding, [start a new discussion](https://github.com/OpenTermsArchive/terms-types/discussions/new?category=submitted).
 
+Note that service-specific types (such as “Twitter Privacy Policy”) are not allowed. Terms types aim at allowing comparisons across services and should thus be generic.
+
 ### Integration process
 
 New suggestions for terms types are categorized as `Submitted`. The Core Team reviews these suggestions and ensures that all the necessary information is gathered and clear and that at least 5 examples are provided, maximizing industry and jurisdiction diversity. When this is the case, the discussion is moved to the `Qualified` category and opened up to the community.
