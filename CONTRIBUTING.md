@@ -37,7 +37,7 @@ Once your suggestion is `Qualified`, build consensus by publicizing it across Op
 
 Once a consensus has been reached and at least 2 weeks have passed since the discussion was opened, to ensure visibility within the community, a pull request for the addition to the database can be submitted. To facilitate tracking and participation, each pull request should contain only one type addition and must link to the corresponding discussion.
 
-The Core Team will then review the pull request, taking into account factors such as uniqueness, clarity, and relevance.
+The Core Team will then review the pull request.
 
 ## Governance considerations
 
