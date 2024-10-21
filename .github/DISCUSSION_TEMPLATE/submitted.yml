@@ -8,11 +8,13 @@ body:
 
       **Terms types** enable discovering terms and comparing them across services. Once a type is in use, it is there to stay. It is therefore critical to ensure that each type is well defined and has actual uses. The questions below will help define the type and enable the Open Terms Archive community to discuss its relevance to the wider ecosystem.
 
-      The `<suggested new type name>` should be the most commonly used and most internationally understandable for this type. It doesn't have to, and probably should not, match the service-provided name. Make use of tools such as Google Trends, Linguee and thesaurus to find the name that strikes the best balance between generality, precision and multilingualism.
-
-      > For example, the “Imprint” type is [called this way](https://github.com/OpenTermsArchive/engine/issues/801) as a balance between the French “mentions légales”, the German “impressum”, and other considerations.
-      
       ### If no existing [implemented or suggested type](https://github.com/OpenTermsArchive/terms-types/discussions) matches your suggestion, fill in the fields below to start a discussion!
+      
+      #### Title
+
+      The `<suggested new type name>` should be the most commonly used and most internationally understandable for this type. It doesn't have to match the service-provided name. Use tools such as Google Trends, Linguee and thesaurus to find the name that balances out best generality, precision and multilingualism.
+
+      > For example, the “Imprint” type is [called this way](https://github.com/OpenTermsArchive/engine/issues/801) as a balance between the French “mentions légales”, the German “impressum”, and usage statistics.
 - type: textarea
   id: examples
   attributes:
