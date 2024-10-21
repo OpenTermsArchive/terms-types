@@ -21,9 +21,9 @@ If you need to track some terms for a service, you might encounter cases when no
 
 ### Open a discussion
 
-First of all, double-check that it does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking. 
+First of all, double-check that the type you consider adding does not already exist in the [database](./termsTypes.json). If it does, use the associated type for tracking. 
 
-Then check the [open discussions](https://github.com/opentermsarchive/terms-types/discussions) in this repository to make sure that there is not already a discussion about the type you intend to add.
+If not, then check the [open discussions](https://github.com/opentermsarchive/terms-types/discussions) in this repository to make sure that there is not already a discussion about the type you consider adding.
 
 If no discussion seems to match the type you are interested in adding, [start a new discussion](https://github.com/OpenTermsArchive/terms-types/discussions/new?category=submitted).
 
@@ -31,11 +31,11 @@ Note that service-specific types (such as “Twitter Privacy Policy”) are not 
 
 ### Integration process
 
-New suggestions for terms types are categorized as `Submitted`. The Core Team reviews these suggestions and ensures that all the necessary information is gathered and clear and that at least 5 examples are provided, maximizing industry and jurisdiction diversity. When this is the case, the discussion is moved to the `Qualified` category and opened up to the community.
+New suggestions for terms types are categorized as `Submitted`. The Core Team reviews these suggestions and ensures that all the necessary information is gathered and clear and that at least 5 examples are provided, maximizing industry and jurisdiction diversity. Once that is the case, the discussion is moved to the `Qualified` category and opened up to the community.
 
 Once your suggestion is `Qualified`, build consensus by publicizing it across Open Terms Archive channels and engaging with the community. Throughout the discussion, the data should be critically examined, especially taking into account international perspectives on vocabulary and the variety of definitions across jurisdictions.
 
-Once a consensus has been reached and at least 2 weeks have passed since the discussion was opened, to ensure visibility within the community, a pull request for the addition to the database can be submitted. To facilitate tracking and participation, each pull request should contain only one type addition and must link to the corresponding discussion.
+Once a consensus has been reached and at least 2 weeks have passed since the discussion was opened (to ensure visibility within the community), a pull request for the addition to the database can be submitted. To facilitate tracking and participation, each pull request should contain only one type addition and must link to the corresponding discussion.
 
 The Core Team will then review the pull request.
 
