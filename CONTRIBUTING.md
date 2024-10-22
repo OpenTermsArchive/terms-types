@@ -3,8 +3,6 @@ First of all, thanks for taking the time to contribute! 🎉👍
 ## Table of Contents
 
 - [Add new Terms Types](#add-new-terms-types)
-  - [Open a discussion](#open-a-discussion)
-  - [Integration process](#integration-process)
 - [Governance considerations](#governance-considerations)
 - [List a new contributor](#list-a-new-contributor)
 - [Changelog](#changelog)
@@ -31,13 +29,23 @@ Note that service-specific types (such as “Twitter Privacy Policy”) are not 
 
 ### Integration process
 
+#### Qualification
+
 New suggestions for terms types are categorized as `Submitted`. The Core Team reviews these suggestions and ensures that all the necessary information is gathered and clear and that at least 5 examples are provided, maximizing industry and jurisdiction diversity. Once that is the case, the discussion is moved to the `Qualified` category and opened up to the community.
 
-Once your suggestion is `Qualified`, build consensus by publicizing it across Open Terms Archive channels and engaging with the community. Throughout the discussion, the data should be critically examined, especially taking into account international perspectives on vocabulary and the variety of definitions across jurisdictions.
+#### Community outreach
 
-Once a consensus has been reached and at least 2 weeks have passed since the discussion was opened (to ensure visibility within the community), a pull request for the addition to the database can be submitted. To facilitate tracking and participation, each pull request should contain only one type addition and must link to the corresponding discussion.
+Once your suggestion is `Qualified`, publicize it across Open Terms Archive channels and engage with the community. This will enable multiple perspectives to be shared, yielding a clear and reusable proposal that maximises usage. Throughout the discussion, the data should be critically examined, especially taking into account international perspectives on vocabulary and the variety of definitions across jurisdictions.
 
-The Core Team will then review the pull request.
+Community feedback is expressed in the following ways:
+
+- ⬆️ upvoting types suggestions that seem relevant for their field of work, thereby increasing their priority and visibility among other suggested types;
+- 🚀 reacting with a rocket emoji to a suggestion that seems acceptable as it is, thereby supporting its integration;
+- 💬 commenting on a suggestion to describe potential improvements or limitations, thereby evolving the suggestion.
+
+#### Integration
+
+Integration is done on a [consent](https://www.holacracy.org/blog/why-consent-is-better-than-consensus/) basis, meaning that no remark is blocking the suggestion from moving forward. After at least 2 weeks have passed since the suggestion was initially opened or last changed, and once all pending remarks have been solved, a pull request for addition to the database can be submitted. To facilitate tracking and participation, each pull request should contain only one type addition and must link to the corresponding discussion. The Core Team will then review and potentially merge the pull request.
 
 ## Governance considerations
 
