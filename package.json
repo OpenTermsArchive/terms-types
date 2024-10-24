@@ -1,6 +1,6 @@
 {
   "name": "@opentermsarchive/terms-types",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered",
   "homepage": "https://github.com/OpenTermsArchive/terms-document-types#readme",
   "bugs": {
