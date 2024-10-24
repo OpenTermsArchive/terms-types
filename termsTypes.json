@@ -425,5 +425,19 @@
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/41",
       "Wikipedia page on Affiliate Marketing": "https://en.wikipedia.org/wiki/Affiliate_marketing"
     }
+  },
+  "Service Level Agreement": {
+    "also known as": [
+      "Service Level Addendum"
+    ],
+    "commitment": {
+      "writer": "service provider",
+      "audience": "end user",
+      "object": "define and guarantee specific levels of service performance, availability, and quality"
+    },
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/79",
+      "Wikipedia page on Service-level agreement": "https://en.wikipedia.org/wiki/Service-level_agreement"
+    }
   }
 }
