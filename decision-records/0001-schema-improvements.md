@@ -4,21 +4,17 @@
 
 ## Introduction
 
-This RFC proposes improvements to the current data schema to improve usability. Since changing the data structure entails publishing a new major version—which can be costly for downstream dependencies—it is crucial to use this opportunity to reconsider the entire vocabulary and structure.
+This RFC proposes improvements to the current data schema to improve usability. Since changing the data structure entails publishing a new major version, which is costly for downstream dependencies, it is relevant to consider the entire vocabulary and structure to avoid later changes in the near future.
 
 ## Context and Problem Statement
 
 ### Confusion around the `writer` field
 
-The `writer` field is filled in with "service provider" in 32 out of 41 terms types, which does not seem to add significant value. Other values, such as `transportation operator (airline, railway, bus…)` (once), `paid-for goods or service provider` (once), `online marketplace` (twice), `search engine or intermediation service provider` (twice), and `intermediation service provider` (three times), can provide information about the industry in which the terms operate, which is not the original purpose of the `writer` field.
+The `writer` field is filled in with `service provider` in 32 out of 41 existing terms types, which does not add much value. Other values, such as `transportation operator (airline, railway, bus…)` (once), `paid-for goods or service provider` (once), `online marketplace` (twice), `search engine or intermediation service provider` (twice), and `intermediation service provider` (three times), only provide information about the industry in which the service operates, which is not the original purpose of the `writer` field.
 
 ### Ambiguity in the `audience` field
 
 There is ambiguity between the audience of the document and the audience of the service. Currently, the `audience` field could be interpreted in these two ways.
-
-### Complex vocabulary
-
-Several fields are named in ways that could be clearer, such as the `object` field of the `commitment`.
 
 ## Proposed solutions
 
