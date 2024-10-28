@@ -84,7 +84,7 @@ There is ambiguity between the audience of the document and the audience of the 
 
 ```json
 "Editorial Policy": {
-  "subject": "writing and publishing standards and principles",
+  "topic": "writing and publishing standards and principles",
   "aliases": [
     "Editorial Guidelines"
   ],
@@ -96,8 +96,8 @@ There is ambiguity between the audience of the document and the audience of the 
 
 ```json
 "Conditions of Carriage": {
-  "subject": "benefits and limitations associated with the transportation being provided",
-  "owner": "transportation operator (airline, railway, bus…)",
+  "topic": "benefits and limitations associated with the transportation being provided",
+  "industry": "transportation operator (airline, railway, bus…)",
   "recipient": "passenger",
   "aliases": [
     "Transport Conditions"
