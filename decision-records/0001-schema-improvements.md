@@ -68,8 +68,8 @@ There is ambiguity between the audience of the document and the audience of the 
 
 ```json
 "<terms type name>": {
-  "subject": "...",
-  "owner": "...", // Default value: "service provider"
+  "topic": "...",
+  "industry": "...", // Default value: "any"
   "recipient": "...", // Default value: "end user"
   "aliases": [ // Optional
     "..."
