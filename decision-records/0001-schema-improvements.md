@@ -30,7 +30,7 @@ There is ambiguity between the audience of the document and the audience of the 
   "also known as": [ // Optional
     "..."
   ],
-  "referenced by": { // Optional
+  "described in": { // Optional
     "name": "url"
   }
 }
