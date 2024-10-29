@@ -69,7 +69,9 @@ There is ambiguity between the audience of the document and the audience of the 
 ```json
 "<terms type name>": {
   "topic": "...",
-  "industry": "...", // Default value: "any"
+  "industry": [ // Default value: "any"
+    "..."
+  ],
   "recipient": "...", // Default value: "end user"
   "aliases": [ // Optional
     "..."
@@ -97,7 +99,14 @@ There is ambiguity between the audience of the document and the audience of the 
 ```json
 "Conditions of Carriage": {
   "topic": "benefits and limitations associated with the transportation being provided",
-  "industry": "transportation operator (airline, railway, bus…)",
+  "industry": [
+    "Air Transport",
+    "Maritime Transport",
+    "Rail Transport",
+    "Road Freight and Trucking",
+    "Public Transit (Bus, Metro)",
+    "Delivery and Courier Services"
+  ],
   "recipient": "passenger",
   "aliases": [
     "Transport Conditions"
