@@ -18,6 +18,8 @@ There is ambiguity between the audience of the document and the audience of the 
 
 ## Proposed solutions
 
+In any case, this file format does not have default values. Optimizations to remove redundancy do not bring much in the context, and add ambiguity instead.
+
 ### Solution A
 
 #### Schema
