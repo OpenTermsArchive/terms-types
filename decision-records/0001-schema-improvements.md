@@ -22,17 +22,23 @@ In any case, this file format does not have default values. Optimizations to rem
 
 ### Solution A
 
+- Remove `commitment` object
+- Update `object` to `defines` field
+- Update `writer` to `used by` field
+- Update `audience` to `addressed to` field
+- Update `references` to `described in` field
+
 #### Schema
 
 ```json
 "<terms type name>": {
   "defines": "...",
-  "used by": "...", // Default value: "service provider"
-  "addressed to": "...", // Default value: "end user"
-  "also known as": [ // Optional
+  "used by": "...",
+  "addressed to": "...",
+  "also known as": [ // Optional array of strings
     "..."
   ],
-  "described in": { // Optional
+  "described in": { // Optional object with name/url pairs
     "name": "url"
   }
 }
@@ -43,10 +49,12 @@ In any case, this file format does not have default values. Optimizations to rem
 ```json
 "Editorial Policy": {
   "defines": "the writing and publishing standards and principles",
+  "used by": "service provider",
+  "addressed to": "end user",
   "also known as": [
     "Editorial Guidelines"
   ],
-  "referenced by": {
+  "described in": {
     "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/35"
   }
 }
@@ -63,22 +71,24 @@ In any case, this file format does not have default values. Optimizations to rem
 }
 ```
 
-### Solution B 
+### Solution B
+
+- Remove `commitment` object
+- Remove `writer` field
+- Update `object` to `topic` field
+- Update `audience` to `target`  field
+- Update `also known as` to `aliases` field
 
 #### Schema
-
 
 ```json
 "<terms type name>": {
   "topic": "...",
-  "industry": [ // Default value: "any"
+  "target": "...",
+  "aliases": [ // Optional array of strings
     "..."
   ],
-  "recipient": "...", // Default value: "end user"
-  "aliases": [ // Optional
-    "..."
-  ],
-  "references": { // Optional
+  "references": { // Optional object with name/url pairs
     "name": "url"
   }
 }
@@ -88,7 +98,8 @@ In any case, this file format does not have default values. Optimizations to rem
 
 ```json
 "Editorial Policy": {
-  "topic": "writing and publishing standards and principles",
+  "topic": "the writing and publishing standards and principles",
+  "target": "end user",
   "aliases": [
     "Editorial Guidelines"
   ],
@@ -101,7 +112,64 @@ In any case, this file format does not have default values. Optimizations to rem
 ```json
 "Conditions of Carriage": {
   "topic": "benefits and limitations associated with the transportation being provided",
-  "industry": [
+  "target": "passenger",
+  "aliases": [
+    "Transport Conditions"
+  ]
+}
+```
+
+### Solution C
+
+- Remove `commitment` object
+- Remove `writer` field
+- Update `object` to `topic` field
+- Update `audience` to `obligee` field
+- Update `also known as` to `aliases` field
+- Add `indutries` field
+- Add `jurisdictions` field
+
+#### Schema
+
+```json
+"<terms type name>": {
+  "topic": "...",
+  "obligee": "...",
+  "indutries": [ // Optional array of strings
+    "..."
+  ],
+  "jurisdictions": [ // Optional array of ISO 3166-2 region codes
+    "..."
+  ],
+  "aliases": [ // Optional array of strings
+    "..."
+  ],
+  "references": { // Optional object with name/url pairs
+    "name": "url"
+  }
+}
+```
+
+##### Examples
+
+```json
+"Editorial Policy": {
+  "topic": "writing and publishing standards and principles",
+  "obligee": "end user",
+  "aliases": [
+    "Editorial Guidelines"
+  ],
+  "references": {
+    "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/35"
+  }
+}
+```
+
+```json
+"Conditions of Carriage": {
+  "topic": "benefits and limitations associated with the transportation being provided",
+  "obligee": "passenger",
+  "indutries": [
     "Air Transport",
     "Maritime Transport",
     "Rail Transport",
@@ -109,10 +177,31 @@ In any case, this file format does not have default values. Optimizations to rem
     "Public Transit (Bus, Metro)",
     "Delivery and Courier Services"
   ],
-  "recipient": "passenger",
   "aliases": [
     "Transport Conditions"
   ]
+}
+```
+
+```json
+"Anti-corruption Policy": {
+  "topic": "risk mitigation and prevention of involvement in bribery",
+  "obligee": "any person working directly or indirectly for the service provider",
+  "jurisdictions": [
+    "US",
+    "GB",
+    "FR"
+  ],
+  "aliases": [
+    "Anti-bribery Policy"
+  ],
+  "references": {
+    "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/39",
+    "🇺🇸 Foreign Corrupt Practices Act": "https://www.justice.gov/criminal/criminal-fraud/foreign-corrupt-practices-act",
+    "🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents",
+    "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528",
+    "ISO 37001 Anti-bribery management systems": "https://www.iso.org/iso-37001-anti-bribery-management.html"
+  },
 }
 ```
 
