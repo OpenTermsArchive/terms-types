@@ -119,7 +119,7 @@ In any case, this file format does not have default values. Optimizations to rem
 }
 ```
 
-### Solution C
+### Solution C1
 
 - Remove `commitment` object
 - Remove `writer` field
@@ -202,6 +202,107 @@ In any case, this file format does not have default values. Optimizations to rem
     "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528",
     "ISO 37001 Anti-bribery management systems": "https://www.iso.org/iso-37001-anti-bribery-management.html"
   },
+}
+```
+
+### Solution C2
+
+- Include all C1 solution changes
+- Update `obligee` field to an array and make it plural `obligees`
+- Add `applicability` to nest `obligees`, `jurisdictions` and `industries` fields
+
+#### Schema
+
+```json
+"<terms type name>": {
+  "topic": "...",
+  "aliases": [ // Optional array of strings
+    "..."
+  ],
+  "applicability": { // Optional object defining scope
+    "obligee": [ // Array of strings defining the parties obligated by the terms
+      "..."
+    ],
+    "jurisdictions": [ // Array of ISO 3166-2 region codes
+      "..."
+    ],
+    "industries": [ // Array of strings
+      "..."
+    ]
+  },
+  "references": { // Optional object with name/url pairs
+    "name": "url"
+  }
+}
+```
+
+##### Examples
+
+```json
+"Editorial Policy": {
+  "topic": "writing and publishing standards and principles",
+  "aliases": [
+    "Editorial Guidelines"
+  ],
+  "applicability": {
+    "obligee": [
+      "end user",
+      "content contributors"
+    ]
+  },
+  "references": {
+    "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/35"
+  }
+}
+```
+
+```json
+"Conditions of Carriage": {
+  "topic": "benefits and limitations associated with the transportation being provided",
+  "aliases": [
+    "Transport Conditions"
+  ],
+  "applicability": {
+    "obligee": [
+      "passenger",
+      "sender"
+    ],
+    "industries": [
+      "Air Transport",
+      "Maritime Transport",
+      "Rail Transport",
+      "Road Freight and Trucking",
+      "Public Transit (Bus, Metro)",
+      "Delivery and Courier Services"
+    ]
+  }
+}
+```
+
+```json
+"Anti-corruption Policy": {
+  "topic": "risk mitigation and prevention of involvement in bribery",
+  "aliases": [
+    "Anti-bribery Policy"
+  ],
+  "applicability": {
+    "obligee": [
+      "employees",
+      "contractors",
+      "partners"
+    ],
+    "jurisdictions": [
+      "US",
+      "GB",
+      "FR"
+    ]
+  },
+  "references": {
+    "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/39",
+    "🇺🇸 Foreign Corrupt Practices Act": "https://www.justice.gov/criminal/criminal-fraud/foreign-corrupt-practices-act",
+    "🇬🇧 Bribery Act 2010": "https://www.legislation.gov.uk/ukpga/2010/23/contents",
+    "🇫🇷 Loi n°2016-1691 du 9 décembre 2016 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, dite « Sapin II »": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033558528"
+  }
 }
 ```
 
