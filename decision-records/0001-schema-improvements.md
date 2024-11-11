@@ -308,4 +308,4 @@ In any case, this file format does not have default values. Optimizations to rem
 
 ## Decision Outcome
 
-...
+[After consulting the community](https://github.com/OpenTermsArchive/terms-types/pull/85), the solution C1 is retained.
