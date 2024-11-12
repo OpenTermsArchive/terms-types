@@ -2,10 +2,6 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased [no-release]
-
-_Modifications made in this changeset do not add, remove or alter any behavior, dependency, API or functionality of the software. They only change non-functional parts of the repository, such as the README file or CI workflows._
-
 ## 1.4.0 - 2024-10-24
 
 _Full changeset and discussions: [#86](https://github.com/OpenTermsArchive/terms-types/pull/86)._
