@@ -40,51 +40,87 @@ For consistency, the term “Policy” in a type name should only be used singul
 
 ### Alternative names
 
-Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `also known as` key.
+Some terms types might have several commonly-used names, often varying by jurisdiction. To increase discoverability and clarity, alternative names can be provided to terms types. These alternative names are not translations, but rather synonyms in English. They are provided in an array under the `aliases` key.
 
 Examples:
 
-- `"Hyperlinks Policy" : { "also known as": [ "Links Policy", "Linking Policy" ], … }`
-- `"Whistleblower Policy": { "also known as": [ "Whistleblower Protections" ], … }`
+- `"Hyperlinks Policy" : { "aliases": [ "Links Policy", "Linking Policy" ], … }`
+- `"Whistleblower Policy": { "aliases": [ "Whistleblower Protections" ], … }`
 
-### Triptych
+### Required attributes
 
-In order to guide usage and disambiguate synonyms, each terms type is characterised by a triptych along the three dimensions of the `commitment` that is being taken in it:
+Each terms type is characterized by two required attributes:
 
-- the `writer` of the document, in most cases the service provider itself;
-- the targeted `audience` whose rights and duties are defined in the associated terms;
-- the `object` of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms.
+- the `topic` of the commitment, i.e. the information or interaction whose handling will be constrained by the associated terms;
+- the targeted `obligee` whose rights and duties are defined in the associated terms.
 
-Each type thus has the following structure, where all fields are required:
+Each type thus has the following structure:
 
 ```json
 {
   "<Terms Type Name>": {
-    "commitment": {
-      "writer": "<writer>",
-      "audience": "<audience>",
-      "object": "<object>"
+    "topic": "<topic>",
+    "obligee": "<obligee>"
+  }
+}
+```
+
+### Optional attributes
+
+Terms types can have additional optional attributes:
+
+#### Industries
+
+Some terms types might be specific to certain industries. These can be specified in an array under the `industries` key.
+
+```json
+{
+  "<Terms Type Name>": {
+    "topic": "…",
+    "obligee": "…",
+    "industries": [
+      "Air Transport",
+      "Maritime Transport"
+    ]
+  }
+}
+```
+
+#### Jurisdictions
+
+Some terms types might be specific to certain jurisdictions. These can be specified as [ISO 3166-2 region codes](https://en.wikipedia.org/wiki/ISO_3166-2) in an array under the `jurisdictions` key.
+
+```json
+{
+  "<Terms Type Name>": {
+    "topic": "…",
+    "obligee": "…",
+    "jurisdictions": [
+      "US",
+      "GB",
+      "FR"
+    ]
+  }
+}
+```
+
+#### References
+
+Terms types may contain a `references` property which contains a map of related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name. Each reference must have a name and a URL.
+
+```json
+{
+  "<Terms Type Name>": {
+    "topic": "…",
+    "obligee": "…",
+    "references": {
+      "<reference name>": "<URL where the reference can be found>"
     }
   }
 }
 ```
 
-### References
-
-It may also contain an optional `references` property which contains a map of related resources that may help to understand the purpose of this type, such as legal definitions, or the discussions that led to the choice of this name. Each reference must have a name and a URL.
-
-```json
-{
-  "<Terms Type Name>": {
-    "commitment": { … },
-    "references": {
-      "<reference name>": "<URL where the reference can be found>"
-    }
-  },
-}
-```
-
-#### Legal references
+##### Legal references
 
 Legal references will be prefixed by the flag emoji of the jurisdiction of enactment, will use the full name of the law, and will link to the official journal URL.
 
@@ -97,14 +133,11 @@ Examples:
 
 ```json
 "Whistleblower Policy": {
-  "also known as": [
+  "topic": "reporting on suspected misconduct and illegal acts and prevention of retaliation",
+  "obligee": "employees",
+  "aliases": [
     "Whistleblower Protections"
   ],
-  "commitment": {
-    "writer": "service provider",
-    "audience": "employees",
-    "object": "reporting on suspected misconduct and illegal acts and prevention of retaliation"
-  },
   "references": {
     "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/37",
     "🇺🇸 Whistleblower Protection Act of 1989": "https://www.govinfo.gov/content/pkg/STATUTE-103/pdf/STATUTE-103-Pg16.pdf",
@@ -112,16 +145,6 @@ Examples:
   }
 }
 ```
-
-## How to define the triptych
-
-To identify the triptych of specific terms, answer the following questions:
-
-1. Who is responsible for creating and maintaining those terms? Most often, it will be the `service provider` itself. Sometimes, while still being the service provider, it could be that only providers from a certain industry could write such terms, such as `transportation operator`.
-2. Who is the target audience whose rights and duties are defined? Often, it will be the `end user`, but it can also be the `commercial partners` or `business users`, for example.
-3. Which information or interaction precisely is constrained by those terms? For example, the `end users’ personal data`, or maybe the `privileged seller status programme`. Try to be as specific as possible, as this precision enables distinguishing between otherwise similar types.
-
-After having answered these questions, if reading out loud the triptych, it sounds right to say that **“these terms describe how the `<writer>` commits to handle the `<object>` for its `<audience>`”**.
 
 ## Add new terms types
 
