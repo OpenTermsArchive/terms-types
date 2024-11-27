@@ -171,21 +171,23 @@
       "Transport Conditions"
     ],
     "industries": [
-      "Air Transport",
-      "Maritime Transport",
-      "Rail Transport",
-      "Road Freight and Trucking",
-      "Public Transit (Bus, Metro)",
-      "Delivery and Courier Services"
+      "Transportations"
     ]
   },
   "General Conditions of Sale": {
     "topic": "warranty, delivery, return of goods or services bought through a monetary transaction",
-    "obligee": "buyer"
+    "obligee": "buyer",
+    "industries": [
+      "Goods",
+      "Services"
+    ]
   },
   "Marketplace Buyers Conditions": {
     "topic": "buying through a monetary transaction goods or services offered by sellers other than the marketplace itself",
-    "obligee": "buyer"
+    "obligee": "buyer",
+    "industries": [
+      "Online marketplace"
+    ]
   },
   "Marketplace Sellers Conditions": {
     "topic": "selling through a monetary transaction goods or services to buyers other than the marketplace itself",
@@ -200,6 +202,9 @@
   "Ranking Parameters Description": {
     "topic": "parameters determining ranking and the reasons for their relative importance",
     "obligee": "users presented with a list of ranked results, or contributors of results that are ranked",
+    "industries": [
+      "Intermediation service"
+    ],
     "references": {
       "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/902",
       "🇪🇺 Article 5 of P2B Regulation 2019/1150": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150#d1e868-57-1",
@@ -210,6 +215,9 @@
   "Premium Partner Conditions": {
     "topic": "eligibility criteria, limitations and benefits of a privileged seller status programme",
     "obligee": "sellers of goods or services",
+    "industries": [
+      "Intermediation service"
+    ],
     "aliases": [
       "Premium Partner Program"
     ],
@@ -220,6 +228,10 @@
   "Platform to Business Notice": {
     "topic": "complaints handling, mediation, transparency and other rights and information mandated by the P2B regulation",
     "obligee": "business user",
+    "industries": [
+      "Search engine",
+      "Intermediation service"
+    ],
     "references": {
       "Open Terms Archive Discussion": "https://github.com/OpenTermsArchive/engine/discussions/940",
       "🇪🇺 P2B Regulation 2019/1150": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj"
@@ -228,6 +240,9 @@
   "Business Mediation Policy": {
     "topic": "eligibility and process of mediation after internal complaints handling failed",
     "obligee": "business users",
+    "industries": [
+      "Intermediation service"
+    ],
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/933",
       "🇪🇺 P2B Regulation 2019/1150, Article 12": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj#d1e1148-57-1"
@@ -236,6 +251,9 @@
   "Business Privacy Policy": {
     "topic": "personal data of business users and of people acting on their behalf",
     "obligee": "business user",
+    "industries": [
+      "Intermediation service"
+    ],
     "references": {
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/engine/discussions/923"
     }
