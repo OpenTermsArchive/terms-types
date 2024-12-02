@@ -5,36 +5,39 @@ const schema = {
     '\\w': {
       type: 'object',
       additionalProperties: false,
-      required: ['commitment'],
+      required: ['topic', 'obligee'],
       properties: {
-        'also known as': {
+        topic: {
+          type: 'string',
+          title: 'The topic of the commitment',
+          examples: ['end user’s service usage', 'end user’s personal data', 'public behaviour'],
+        },
+        obligee: {
+          type: 'string',
+          title: 'The targeted audience',
+          examples: ['end user', 'developer', 'data controllers (in the sense of GDPR)'],
+        },
+        aliases: {
           type: 'array',
           items: {
-            type: 'string'
+            type: 'string',
           },
-          minItems: 1
+          minItems: 1,
         },
-        commitment: {
-          type: 'object',
-          additionalProperties: false,
-          required: ['writer', 'audience', 'object'],
-          properties: {
-            writer: {
-              type: 'string',
-              title: 'The writer of the document',
-              examples: ['service provider', 'intermediation service provider'],
-            },
-            audience: {
-              type: 'string',
-              title: 'The targeted audience',
-              examples: ['end user', 'developer', 'data controllers (in the sense of GDPR)'],
-            },
-            object: {
-              type: 'string',
-              title: 'The object of the commitment',
-              examples: ['end user’s service usage', 'end user’s personal data', 'public behaviour'],
-            },
+        industries: {
+          type: 'array',
+          items: {
+            type: 'string',
           },
+          minItems: 1,
+        },
+        jurisdictions: {
+          type: 'array',
+          items: {
+            type: 'string',
+            pattern: '^[A-Z]{2}$', // ISO 3166-2 region codes
+          },
+          minItems: 1,
         },
         references: {
           type: 'object',

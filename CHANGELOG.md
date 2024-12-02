@@ -2,6 +2,14 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased [major]
+
+> Development of this release was supported by the [French Ministry for Foreign Affairs](https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/diplomatie-numerique/) through its ministerial [State Startups incubator](https://beta.gouv.fr/startups/open-terms-archive.html) under the aegis of the Ambassador for Digital Affairs.
+
+### Changed
+
+- **Breaking:** Improve data schema to improve usability; remove `commitment` object structure, move `commitment.object` to `topic` and `commitment.audience` to `obligee`, rename `also known as` to `aliases` ([decision record](./decision-records/0001-schema-improvements.md))
+
 ## 1.4.0 - 2024-10-24
 
 _Full changeset and discussions: [#86](https://github.com/OpenTermsArchive/terms-types/pull/86)._
