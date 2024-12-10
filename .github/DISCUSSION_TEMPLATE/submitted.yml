@@ -34,17 +34,17 @@ body:
       Business Users Privacy Policy
       Commercial Privacy Policy
 - type: input
-  id: audience
+  id: topic
   attributes:
-    label: Whose rights and duties are defined in these terms?
-    description: The entities targeted by these terms.
-    placeholder: business user
+    label: What is the main topic of these terms?
+    description: The information or interaction whose handling will be constrained by the associated terms.
+    placeholder: end user's personal data
 - type: input
-  id: object
+  id: obligee
   attributes:
-    label: What is the object of commitment in these terms?
-    description: The information handling or interaction that is constrained by the associated terms.
-    placeholder: personal data of business users
+    label: Who is the obligee of these terms?
+    description: The entity whose rights and obligations are defined in the associated terms.
+    placeholder: end user
 - type: textarea
   id: references
   attributes:
