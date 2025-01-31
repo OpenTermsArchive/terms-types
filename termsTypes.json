@@ -342,5 +342,15 @@
       "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/79",
       "Wikipedia page on Service-level agreement": "https://en.wikipedia.org/wiki/Service-level_agreement"
     }
+  },
+  "Content Monetisation Policy": {
+    "topic": "forms of content that generate revenue for their creator",
+    "obligee": "monetised content creator",
+    "aliases": [
+      "Content Monetization Policy"
+    ],
+    "references": {
+      "Open Terms Archive discussion": "https://github.com/OpenTermsArchive/terms-types/discussions/89"
+    }
   }
 }
