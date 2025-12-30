@@ -2,6 +2,14 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased [minor]
+
+> Development of this release was supported by [Reset Tech](https://www.reset.tech).
+
+### Added
+
+- Add `Advertising Content Policy` ([discussions/95](https://github.com/OpenTermsArchive/terms-types/discussions/95))
+
 ## 2.1.0 - 2025-02-24
 
 _Full changeset and discussions: [#91](https://github.com/OpenTermsArchive/terms-types/pull/91)._
