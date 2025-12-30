@@ -2,7 +2,9 @@
 
 All changes that impact users of this module are documented in this file, in the [Common Changelog](https://common-changelog.org) format with some additional specifications defined in the [CONTRIBUTING](./CONTRIBUTING.md) file. This codebase adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased [minor]
+## 2.2.0 - 2025-12-30
+
+_Full changeset and discussions: [#96](https://github.com/OpenTermsArchive/terms-types/pull/96)._
 
 > Development of this release was supported by [Reset Tech](https://www.reset.tech).
 
