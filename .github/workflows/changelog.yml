@@ -2,17 +2,15 @@ name: Changelog
 
 on:
   pull_request:
-  push:
-    branches: [ 'push-action/**' ]  # enable testing required checks, see https://github.com/CasperWA/push-protected?tab=readme-ov-file#update-your-workflow
+  workflow_dispatch:
   workflow_call:
     outputs:
       release-type:
         description: The release type extracted from changelog
-        value: ${{ jobs.validate-changelog.outputs.release-type }}
+        value: ${{ jobs.validate.outputs.release-type }}
 
 jobs:
-  validate-changelog:
-    if: github.base_ref == 'main' || github.base_ref == 'test-main'  # check that changelog has valid unreleased changes only in PRs that could trigger a release
+  validate:
     runs-on: [ ubuntu-latest ]
     outputs:
       release-type: ${{ steps.validate-changelog.outputs.release-type }}

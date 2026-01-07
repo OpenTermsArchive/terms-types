@@ -2,63 +2,95 @@ name: Release
 
 on:
   pull_request_target:
-    branches: [ main, test-main ]
+    branches: 
+      - main
     types: [ closed ]
+
+permissions:
+  id-token: write  # Required for OIDC. See https://docs.npmjs.com/trusted-publishers#step-2-configure-your-cicd-workflow
+  contents: read
 
 jobs:
   changelog:
-    uses: ./.github/workflows/changelog.yml
-
+    uses: "./.github/workflows/changelog.yml"
   test:
     uses: ./.github/workflows/test.yml
-
   release:
-    if: github.event.pull_request.merged == true
     needs: [ changelog, test ]
+    if: github.event.pull_request.merged == true && needs.changelog.outputs.release-type != 'no-release'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
 
-      - name: Update changelog
-        id: update-changelog
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Configure Git author
+        run: |
+          git config --global user.name "Open Terms Archive Release Bot"
+          git config --global user.email "release-bot@opentermsarchive.org"
+
+      - name: Update changelog for release
+        id: release-changelog
         uses: OpenTermsArchive/changelog-action/release@v0.4.0
 
-      - name: Update package version
-        run: npm --no-git-tag-version --allow-same-version version ${{ steps.update-changelog.outputs.version }}
+      - name: Bump package version
+        run: npm --no-git-tag-version version ${{ steps.release-changelog.outputs.version }}
 
-      - name: Update repository
+      - name: Commit CHANGELOG.md and package.json changes and create tag
         run: |
-          git config user.name "Open Terms Archive Release Bot"
-          git config user.email "release-bot@opentermsarchive.org"
-          git commit --message="Update changelog" CHANGELOG.md package.json package-lock.json
+          git add "package.json"
+          git add "package-lock.json"
+          git add "CHANGELOG.md"
+          git commit -m "Release v${{ steps.release-changelog.outputs.version }}"
+          git tag v${{ steps.release-changelog.outputs.version }}
 
-      - name: Run status checks for release commit on temporary branch  # use temporary branch to enable pushing commits to this branch protected by required status checks
-        uses: CasperWA/push-protected@v2.16.0  # 2.16 minimum is required to benefit from updated defaults
+      - name: Run status checks for release commit on temporary branch # Use temporary branch to enable pushing commits to this branch protected by required status checks 
+        uses: CasperWA/push-protected@v2
         with:
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
-          branch: ${{ github.base_ref }}
-          interval: 10  # seconds between checks
-          pre_sleep: 15
-          fail_fast: true
+          branch: main
+          unprotect_reviews: true
 
-      - name: Publish Git tag
-        if: needs.changelog.outputs.release-type != 'no-release'
-        run: |
-          git tag v${{ steps.update-changelog.outputs.version }}
-          git push --tags
+      - name: Update npm
+        run: npm install -g npm@latest
 
       - name: Publish to NPM public repository
-        if: needs.changelog.outputs.release-type != 'no-release'
-        uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.NPMJS_ACCESS_TOKEN }}
-          dry-run: ${{ github.base_ref != 'main' }}
+        run: npm publish --provenance
 
-      - name: Publish GitHub release
-        if: needs.changelog.outputs.release-type != 'no-release'
+      - name: Push changes to repository
+        run: git push origin && git push --tags
+
+      - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.update-changelog.outputs.version }}
-          body: ${{ steps.update-changelog.outputs.content }}
+          tag_name: v${{ steps.release-changelog.outputs.version }}
+          body: ${{ steps.release-changelog.outputs.content }}
           token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
+
+  clean_changelog:
+    if: github.event.pull_request.merged == true && needs.changelog.outputs.release-type == 'no-release'
+    needs: [ changelog ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
+
+      - name: Configure Git author
+        run: |
+          git config --global user.name "Open Terms Archive Release Bot"
+          git config --global user.email "release-bot@opentermsarchive.org"
+
+      - name: Update changelog for release
+        uses: OpenTermsArchive/changelog-action/release@v0.2.0
+
+      - name: Save changelog
+        run: |
+          git commit -m "Clean changelog" CHANGELOG.md
+          git push origin
