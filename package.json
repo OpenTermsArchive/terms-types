@@ -1,14 +1,14 @@
 {
   "name": "@opentermsarchive/terms-types",
   "version": "2.2.0",
-  "description": "Database of types of terms of service (“agreement”, “policy”, “guidelines”…) under which a service is delivered",
-  "homepage": "https://github.com/OpenTermsArchive/terms-document-types#readme",
+  "description": "Ontology of terms and conditions document types (e.g., agreements, policies, guidelines) under which digital services are provided, designed to normalize naming variations and enable comparison of terms across services regardless of provider-specific labels.",
+  "homepage": "https://github.com/OpenTermsArchive/terms-types#readme",
   "bugs": {
-    "url": "https://github.com/OpenTermsArchive/terms-document-types/issues"
+    "url": "https://github.com/OpenTermsArchive/terms-types/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenTermsArchive/terms-document-types.git"
+    "url": "git+https://github.com/OpenTermsArchive/terms-types.git"
   },
   "license": "EUPL-1.2",
   "author": "OpenTermsArchive",
