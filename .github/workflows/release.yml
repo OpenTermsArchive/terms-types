@@ -1,96 +1,40 @@
 name: Release
 
 on:
-  pull_request_target:
-    branches: 
+  push:
+    branches:
       - main
-    types: [ closed ]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 permissions:
-  id-token: write  # Required for OIDC. See https://docs.npmjs.com/trusted-publishers#step-2-configure-your-cicd-workflow
+  id-token: write
   contents: read
 
 jobs:
+  release-decision:
+    uses: OpenTermsArchive/shared-workflows/.github/workflows/release-decision.yml@4565230eda2a36c5270784cd73452743dc0a69ed # v0.2.0
+
   changelog:
-    uses: "./.github/workflows/changelog.yml"
+    needs: release-decision
+    if: ${{ needs.release-decision.outputs.should-release == 'true' }}
+    uses: OpenTermsArchive/shared-workflows/.github/workflows/changelog.yml@4565230eda2a36c5270784cd73452743dc0a69ed # v0.2.0
+
   test:
-    uses: ./.github/workflows/test.yml
+    needs: changelog
+    if: ${{ needs.changelog.outputs.release-type != 'no-release' }}
+    uses: OpenTermsArchive/terms-types/.github/workflows/test.yml@main
+
   release:
-    needs: [ changelog, test ]
-    if: github.event.pull_request.merged == true && needs.changelog.outputs.release-type != 'no-release'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
+    needs: [changelog, test]
+    if: ${{ needs.changelog.outputs.release-type != 'no-release' }}
+    uses: OpenTermsArchive/shared-workflows/.github/workflows/release.yml@4565230eda2a36c5270784cd73452743dc0a69ed # v0.2.0
+    secrets: inherit
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Configure Git author
-        run: |
-          git config --global user.name "Open Terms Archive Release Bot"
-          git config --global user.email "release-bot@opentermsarchive.org"
-
-      - name: Update changelog for release
-        id: release-changelog
-        uses: OpenTermsArchive/changelog-action/release@v0.4.0
-
-      - name: Bump package version
-        run: npm --no-git-tag-version version ${{ steps.release-changelog.outputs.version }}
-
-      - name: Commit CHANGELOG.md and package.json changes and create tag
-        run: |
-          git add "package.json"
-          git add "package-lock.json"
-          git add "CHANGELOG.md"
-          git commit -m "Release v${{ steps.release-changelog.outputs.version }}"
-          git tag v${{ steps.release-changelog.outputs.version }}
-
-      - name: Run status checks for release commit on temporary branch # Use temporary branch to enable pushing commits to this branch protected by required status checks 
-        uses: CasperWA/push-protected@v2
-        with:
-          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
-          branch: main
-          unprotect_reviews: true
-
-      - name: Update npm
-        run: npm install -g npm@latest
-
-      - name: Publish to NPM public repository
-        run: npm publish --provenance
-
-      - name: Push changes to repository
-        run: git push origin && git push --tags
-
-      - name: Create GitHub release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ steps.release-changelog.outputs.version }}
-          body: ${{ steps.release-changelog.outputs.content }}
-          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
-
-  clean_changelog:
-    if: github.event.pull_request.merged == true && needs.changelog.outputs.release-type == 'no-release'
-    needs: [ changelog ]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.RELEASE_BOT_GITHUB_TOKEN }}
-
-      - name: Configure Git author
-        run: |
-          git config --global user.name "Open Terms Archive Release Bot"
-          git config --global user.email "release-bot@opentermsarchive.org"
-
-      - name: Update changelog for release
-        uses: OpenTermsArchive/changelog-action/release@v0.2.0
-
-      - name: Save changelog
-        run: |
-          git commit -m "Clean changelog" CHANGELOG.md
-          git push origin
+  clean-changelog:
+    needs: changelog
+    if: ${{ needs.changelog.outputs.release-type == 'no-release' }}
+    uses: OpenTermsArchive/shared-workflows/.github/workflows/clean-changelog.yml@4565230eda2a36c5270784cd73452743dc0a69ed # v0.2.0
+    secrets: inherit
